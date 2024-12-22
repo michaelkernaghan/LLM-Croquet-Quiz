@@ -424,3 +424,20 @@ function restartQuiz() {
 }
 
 document.addEventListener('DOMContentLoaded', initQuiz); 
+
+// Password validation
+passwordInput.addEventListener('input', () => {
+    console.log('Password input:', passwordInput.value);
+    const password = passwordInput.value;
+    const error = document.getElementById('password-error');
+    
+    if (password === 'banksy') {
+        error.textContent = '';
+        startButton.disabled = false;
+        console.log('Password correct, button enabled');
+    } else {
+        error.textContent = 'Invalid password';
+        startButton.disabled = true;
+        console.log('Password incorrect, button disabled');
+    }
+}); 

@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Which theorist established the concept of Aura in 1935?",
+      "question": "Which 1935 work established Aura as a critical concept?",
       "answers": [
         {
           "id": "q1a1",
@@ -176,7 +176,7 @@
       "questionType": 1
     },
     {
-      "question": "How did 'Ways of Seeing' transform our understanding of visual culture?",
+      "question": "Which theorist developed the concept of Visual culture in Ways of Seeing?",
       "answers": [
         {
           "id": "q6a1",
@@ -190,12 +190,12 @@
         },
         {
           "id": "q6a3",
-          "answer": "Marshall McLuhan",
+          "answer": "Laura Mulvey",
           "correct": false
         },
         {
           "id": "q6a4",
-          "answer": "Laura Mulvey",
+          "answer": "Marshall McLuhan",
           "correct": false
         }
       ],
@@ -203,10 +203,10 @@
         "title": "Ways of Seeing",
         "year": 1972,
         "author": "John Berger",
-        "key_concepts": "Visual culture, reproduction, gender, advertising",
-        "summary": "Analysis of how art and visual culture shape social understanding",
-        "significance": "Revolutionized understanding of visual culture and art history",
-        "related_concepts": "Visual culture, art history, media theory"
+        "key_concepts": "Visual culture, gender representation, art reproduction",
+        "summary": "Analysis of how we look at art and visual culture, examining the hidden ideologies in visual representation",
+        "significance": "Revolutionary approach to art criticism and visual analysis",
+        "related_concepts": "Visual culture, feminism, art reproduction, mass media"
       },
       "questionType": 1
     },
@@ -526,7 +526,7 @@
       "questionType": 5
     },
     {
-      "question": "Which theorist developed key concepts of new media aesthetics?",
+      "question": "Which philosopher explored Digital media through their analysis of Digital aesthetics?",
       "answers": [
         {
           "id": "q16a1",
@@ -631,7 +631,7 @@
       "questionType": 2
     },
     {
-      "question": "Which theorist pioneered the study of electronic media in art?",
+      "question": "Which philosopher explored Electronic art through their analysis of Media art?",
       "answers": [
         {
           "id": "q19a1",
@@ -806,7 +806,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed mechanical reproduction's impact on art?",
+      "question": "Which Frankfurt School theorist wrote about Mechanical reproduction and Mechanical reproduction?",
       "answers": [
         {
           "id": "q24a1",
@@ -876,7 +876,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed art's role in post-capitalist society?",
+      "question": "Which philosopher explored Post-capitalist art through their analysis of Post-capitalist art?",
       "answers": [
         {
           "id": "q26a1",
@@ -946,7 +946,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist revolutionized art theory in 1936?",
+      "question": "Which critical theorist challenged Art in their 1936 work?",
       "answers": [
         {
           "id": "q29a1",
@@ -954,18 +954,18 @@
           "correct": true
         },
         {
-          "id": "q6a2",
-          "answer": "Peter Weibel",
+          "id": "q29a2",
+          "answer": "Adorno",
           "correct": false
         },
         {
-          "id": "q6a3",
-          "answer": "Roy Ascott",
+          "id": "q29a3",
+          "answer": "Heidegger",
           "correct": false
         },
         {
-          "id": "q6a4",
-          "answer": "Gene Youngblood",
+          "id": "q29a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -989,18 +989,18 @@
           "correct": true
         },
         {
-          "id": "q6a2",
-          "answer": "Clement Greenberg",
+          "id": "q31a2",
+          "answer": "Benjamin",
           "correct": false
         },
         {
-          "id": "q6a3",
-          "answer": "Harold Rosenberg",
+          "id": "q31a3",
+          "answer": "Adorno",
           "correct": false
         },
         {
-          "id": "q6a4",
-          "answer": "Michael Fried",
+          "id": "q31a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -1019,23 +1019,23 @@
       "question": "How did \"The Dialectic of Enlightenment\" change our understanding of Enlightenment?",
       "answers": [
         {
+          "id": "q33a1",
+          "answer": "Heidegger",
+          "correct": false
+        },
+        {
+          "id": "q33a2",
+          "answer": "Benjamin",
+          "correct": false
+        },
+        {
           "id": "q33a3",
           "answer": "Adorno",
           "correct": true
         },
         {
-          "id": "q6a2",
-          "answer": "Clement Greenberg",
-          "correct": false
-        },
-        {
-          "id": "q6a3",
-          "answer": "Harold Rosenberg",
-          "correct": false
-        },
-        {
-          "id": "q6a4",
-          "answer": "Michael Fried",
+          "id": "q33a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -1054,23 +1054,23 @@
       "question": "Which theorist analyzed Authoritarianism in their work \"The Authoritarian Personality\"?",
       "answers": [
         {
+          "id": "q34a1",
+          "answer": "Heidegger",
+          "correct": false
+        },
+        {
+          "id": "q34a2",
+          "answer": "Benjamin",
+          "correct": false
+        },
+        {
           "id": "q34a3",
           "answer": "Adorno",
           "correct": true
         },
         {
-          "id": "q3a2",
-          "answer": "Clement Greenberg",
-          "correct": false
-        },
-        {
-          "id": "q3a3",
-          "answer": "Harold Rosenberg",
-          "correct": false
-        },
-        {
-          "id": "q3a4",
-          "answer": "Michael Fried",
+          "id": "q34a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -1089,23 +1089,23 @@
       "question": "Which 1944 work established Culture industry as a critical concept?",
       "answers": [
         {
+          "id": "q35a1",
+          "answer": "Heidegger",
+          "correct": false
+        },
+        {
+          "id": "q35a2",
+          "answer": "Benjamin",
+          "correct": false
+        },
+        {
           "id": "q35a3",
           "answer": "Adorno",
           "correct": true
         },
         {
-          "id": "q6a2",
-          "answer": "Clement Greenberg",
-          "correct": false
-        },
-        {
-          "id": "q6a3",
-          "answer": "Harold Rosenberg",
-          "correct": false
-        },
-        {
-          "id": "q6a4",
-          "answer": "Michael Fried",
+          "id": "q35a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -1124,23 +1124,23 @@
       "question": "Who introduced the concept of Authenticity to critical theory?",
       "answers": [
         {
+          "id": "q36a1",
+          "answer": "Heidegger",
+          "correct": false
+        },
+        {
+          "id": "q36a2",
+          "answer": "Benjamin",
+          "correct": false
+        },
+        {
           "id": "q36a3",
           "answer": "Adorno",
           "correct": true
         },
         {
-          "id": "q3a2",
-          "answer": "Jean Baudrillard",
-          "correct": false
-        },
-        {
-          "id": "q3a3",
-          "answer": "Jacques Derrida",
-          "correct": false
-        },
-        {
-          "id": "q3a4",
-          "answer": "Gilles Deleuze",
+          "id": "q36a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -1159,23 +1159,23 @@
       "question": "How did \"The Positivist Dispute in Germany\" change our understanding of Positivism?",
       "answers": [
         {
+          "id": "q37a1",
+          "answer": "Heidegger",
+          "correct": false
+        },
+        {
+          "id": "q37a2",
+          "answer": "Benjamin",
+          "correct": false
+        },
+        {
           "id": "q37a3",
           "answer": "Adorno",
           "correct": true
         },
         {
-          "id": "q6a2",
-          "answer": "Jean Baudrillard",
-          "correct": false
-        },
-        {
-          "id": "q6a3",
-          "answer": "Jacques Derrida",
-          "correct": false
-        },
-        {
-          "id": "q6a4",
-          "answer": "Gilles Deleuze",
+          "id": "q37a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -1194,23 +1194,23 @@
       "question": "Which theorist analyzed New music in their work \"The Philosophy of New Music\"?",
       "answers": [
         {
+          "id": "q40a1",
+          "answer": "Heidegger",
+          "correct": false
+        },
+        {
+          "id": "q40a2",
+          "answer": "Benjamin",
+          "correct": false
+        },
+        {
           "id": "q40a3",
           "answer": "Adorno",
           "correct": true
         },
         {
-          "id": "q3a2",
-          "answer": "Clement Greenberg",
-          "correct": false
-        },
-        {
-          "id": "q3a3",
-          "answer": "Harold Rosenberg",
-          "correct": false
-        },
-        {
-          "id": "q3a4",
-          "answer": "Michael Fried",
+          "id": "q40a4",
+          "answer": "Marx",
           "correct": false
         }
       ],
@@ -1506,7 +1506,7 @@
       "questionType": 7
     },
     {
-      "question": "Which theorist challenged traditional notions of cinema in the digital age?",
+      "question": "Which philosopher explored Digital cinema through their analysis of Digital cinema?",
       "answers": [
         {
           "id": "q56a1",
@@ -1748,9 +1748,7 @@
         "significance": "Key framework for understanding digital art practice",
         "related_concepts": "Information art, dematerialization, digital practice"
       },
-      "questionType": 1,
-      "isLLMArt": true,
-      "bonusNote": "Conceptual Bonus Points Available: LLM Art Framework Question"
+      "questionType": 6
     },
     {
       "question": "Which year was the concept of 'Neural Assemblage' first proposed?",
@@ -1785,9 +1783,7 @@
         "significance": "Framework for understanding AI-human artistic collaboration",
         "related_concepts": "Digital collaboration, machine learning art, hybrid creativity"
       },
-      "questionType": 5,
-      "isLLMArt": true,
-      "bonusNote": "Conceptual Bonus Points Available: LLM Art Framework Question"
+      "questionType": 5
     },
     {
       "question": "Whose work \"Hallucination as Critical Practice\" revolutionized our understanding of Simulacra?",
@@ -1822,9 +1818,7 @@
         "significance": "Framework for understanding AI generation as critical practice",
         "related_concepts": "Digital simulacra, AI generation, truth regimes"
       },
-      "questionType": 3,
-      "isLLMArt": true,
-      "bonusNote": "Conceptual Bonus Points Available: LLM Art Framework Question"
+      "questionType": 3
     },
     {
       "question": "Which artist pioneered 'DAOs as Social Sculpture'?",
@@ -1859,9 +1853,7 @@
         "significance": "Foundation for understanding DAOs as artistic medium",
         "related_concepts": "Social practice, organizational aesthetics, collective art"
       },
-      "questionType": 7,
-      "isLLMArt": true,
-      "bonusNote": "Conceptual Bonus Points Available: LLM Art Framework Question"
+      "questionType": 7
     },
     {
       "question": "Which 1967 work established Conceptual tokens as a critical concept?",
@@ -2071,9 +2063,7 @@
         "significance": "Framework for understanding AI prompt engineering as art",
         "related_concepts": "Performance scores, instruction art, algorithmic direction"
       },
-      "questionType": 2,
-      "isLLMArt": true,
-      "bonusNote": "Conceptual Bonus Points Available: LLM Art Framework Question"
+      "questionType": 2
     },
     {
       "question": "Which year was 'The Stack: On Software and Sovereignty' published?",
@@ -2111,7 +2101,7 @@
       "questionType": 5
     },
     {
-      "question": "Which theorist analyzed how protocols shape network culture?",
+      "question": "Which philosopher explored Network protocols through their analysis of Protocol studies?",
       "answers": [
         {
           "id": "q73a1",
@@ -2286,7 +2276,7 @@
       "questionType": 2
     },
     {
-      "question": "Which theorist established computational aesthetics as a field?",
+      "question": "Which philosopher explored Computational design through their analysis of Code art?",
       "answers": [
         {
           "id": "q78a1",
@@ -2388,9 +2378,7 @@
         "significance": "Framework for understanding AI-human collaboration",
         "related_concepts": "Prompt engineering, AI art, collaborative creation"
       },
-      "questionType": 6,
-      "isLLMArt": true,
-      "bonusNote": "Conceptual Bonus Points Available: LLM Art Framework Question"
+      "questionType": 6
     },
     {
       "question": "Which critical theorist challenged Electronic art in their 1993 work?",
@@ -3205,25 +3193,25 @@
       "questionType": 1
     },
     {
-      "question": "Which theorist established Modernity as a critical concept in 1940?",
+      "question": "Which 1940 work established Modernity as a critical concept?",
       "answers": [
         {
-          "id": "q2a1",
+          "id": "repl3a",
           "answer": "Walter Benjamin",
           "correct": true
         },
         {
-          "id": "q2a2",
+          "id": "repl3b",
           "answer": "Siegfried Kracauer",
           "correct": false
         },
         {
-          "id": "q2a3",
+          "id": "repl3c",
           "answer": "Ernst Bloch",
           "correct": false
         },
         {
-          "id": "q2a4",
+          "id": "repl3d",
           "answer": "Georg Simmel",
           "correct": false
         }
