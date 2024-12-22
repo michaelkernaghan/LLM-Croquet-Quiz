@@ -136,8 +136,11 @@ function showQuestion(index) {
     questionDisplay.textContent = question.question;
     answersGrid.innerHTML = '';
     
-    // Create grid of answers with consistent styling
-    question.answers.forEach((answerObj) => {
+    // Randomize answer positions
+    const shuffledAnswers = [...question.answers]
+        .sort(() => Math.random() - 0.5);
+    
+    shuffledAnswers.forEach((answerObj) => {
         const button = document.createElement('button');
         button.textContent = answerObj.answer;
         button.className = 'answer-button';
