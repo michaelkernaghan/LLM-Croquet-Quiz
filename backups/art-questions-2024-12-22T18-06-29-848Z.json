@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Which 1935 work established Aura as a critical concept?",
+      "question": "Which theorist wrote 'The Work of Art in the Age of Mechanical Reproduction'?",
       "answers": [
         {
           "id": "q1a1",
@@ -141,7 +141,7 @@
       "questionType": 4
     },
     {
-      "question": "Whose work \"The Society of the Spectacle\" revolutionized our understanding of Spectacle?",
+      "question": "Who wrote 'The Society of the Spectacle'?",
       "answers": [
         {
           "id": "spec1",
@@ -176,7 +176,7 @@
       "questionType": 1
     },
     {
-      "question": "Which theorist developed the concept of Visual culture in Ways of Seeing?",
+      "question": "Who wrote 'Ways of Seeing'?",
       "answers": [
         {
           "id": "q6a1",
@@ -281,7 +281,7 @@
       "questionType": 3
     },
     {
-      "question": "Whose work \"The Death of the Author\" revolutionized our understanding of Authorship?",
+      "question": "Who wrote 'The Death of the Author'?",
       "answers": [
         {
           "id": "q9a1",
@@ -386,7 +386,7 @@
       "questionType": 5
     },
     {
-      "question": "Whose work \"Artificial Hells\" revolutionized our understanding of Participatory art?",
+      "question": "Who wrote 'Artificial Hells: Participatory Art and the Politics of Spectatorship'?",
       "answers": [
         {
           "id": "q12a1",
@@ -526,7 +526,7 @@
       "questionType": 5
     },
     {
-      "question": "Which philosopher explored Digital media through their analysis of Digital aesthetics?",
+      "question": "Who wrote 'The Language of New Media'?",
       "answers": [
         {
           "id": "q16a1",
@@ -631,7 +631,7 @@
       "questionType": 2
     },
     {
-      "question": "Which philosopher explored Electronic art through their analysis of Media art?",
+      "question": "Who wrote 'Art and Electronic Media'?",
       "answers": [
         {
           "id": "q19a1",
@@ -701,7 +701,7 @@
       "questionType": 4
     },
     {
-      "question": "Whose work \"Virtual Art: From Illusion to Immersion\" revolutionized our understanding of Virtual reality?",
+      "question": "Who wrote 'Virtual Art: From Illusion to Immersion'?",
       "answers": [
         {
           "id": "q21a1",
@@ -771,7 +771,7 @@
       "questionType": 5
     },
     {
-      "question": "Who introduced the concept of Software as art medium to critical theory?",
+      "question": "Who developed the concept of 'software art'?",
       "answers": [
         {
           "id": "q23a1",
@@ -806,7 +806,7 @@
       "questionType": 6
     },
     {
-      "question": "Which Frankfurt School theorist wrote about Mechanical reproduction and Mechanical reproduction?",
+      "question": "Who wrote 'Gramophone, Film, Typewriter'?",
       "answers": [
         {
           "id": "q24a1",
@@ -841,7 +841,7 @@
       "questionType": 3
     },
     {
-      "question": "Whose work \"Protocol: How Control Exists After Decentralization\" revolutionized our understanding of Protocol studies?",
+      "question": "Who wrote 'Protocol: How Control Exists After Decentralization'?",
       "answers": [
         {
           "id": "q25a1",
@@ -876,7 +876,7 @@
       "questionType": 6
     },
     {
-      "question": "Which philosopher explored Post-capitalist art through their analysis of Post-capitalist art?",
+      "question": "Who wrote 'Art After Technology'?",
       "answers": [
         {
           "id": "q26a1",
@@ -911,7 +911,7 @@
       "questionType": 3
     },
     {
-      "question": "Which theorist developed the concept of Commonness in The Aesthetics of the Common?",
+      "question": "Who wrote 'The Aesthetics of the Common'?",
       "answers": [
         {
           "id": "q27a1",
@@ -946,7 +946,7 @@
       "questionType": 6
     },
     {
-      "question": "Which critical theorist challenged Art in their 1936 work?",
+      "question": "Who wrote 'The Work of Art in the Age of Its Technological Reproducibility'?",
       "answers": [
         {
           "id": "q29a1",
@@ -981,7 +981,7 @@
       "questionType": 6
     },
     {
-      "question": "Whose work \"The Origin of German Tragic Drama\" revolutionized our understanding of Drama?",
+      "question": "Who wrote 'The Origin of German Tragic Drama'?",
       "answers": [
         {
           "id": "q31a1",
@@ -1016,7 +1016,7 @@
       "questionType": 6
     },
     {
-      "question": "How did \"The Dialectic of Enlightenment\" change our understanding of Enlightenment?",
+      "question": "Which Frankfurt School theorists collaborated on 'Dialectic of Enlightenment'?",
       "answers": [
         {
           "id": "q33a1",
@@ -1051,7 +1051,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed Authoritarianism in their work \"The Authoritarian Personality\"?",
+      "question": "Who wrote 'The Authoritarian Personality'?",
       "answers": [
         {
           "id": "q34a1",
@@ -1086,7 +1086,7 @@
       "questionType": 3
     },
     {
-      "question": "Which 1944 work established Culture industry as a critical concept?",
+      "question": "Who wrote 'The Culture Industry: Enlightenment as Mass Deception'?",
       "answers": [
         {
           "id": "q35a1",
@@ -1121,7 +1121,7 @@
       "questionType": 6
     },
     {
-      "question": "Who introduced the concept of Authenticity to critical theory?",
+      "question": "Who wrote 'The Jargon of Authenticity'?",
       "answers": [
         {
           "id": "q36a1",
@@ -1156,7 +1156,7 @@
       "questionType": 3
     },
     {
-      "question": "How did \"The Positivist Dispute in Germany\" change our understanding of Positivism?",
+      "question": "Who wrote 'The Positivist Dispute in Germany'?",
       "answers": [
         {
           "id": "q37a1",
@@ -1191,7 +1191,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed New music in their work \"The Philosophy of New Music\"?",
+      "question": "Who wrote 'The Philosophy of New Music'?",
       "answers": [
         {
           "id": "q40a1",
@@ -1226,7 +1226,7 @@
       "questionType": 3
     },
     {
-      "question": "Which theorist analyzed Cybernetic art in their work \"Cybernetic Serendipity\"?",
+      "question": "Who developed the concept of 'cybernetic serendipity'?",
       "answers": [
         {
           "id": "q48a1",
@@ -1366,7 +1366,7 @@
       "questionType": 7
     },
     {
-      "question": "How did \"Telematic Art\" change our understanding of Telematics?",
+      "question": "Who developed the concept of 'telematic art'?",
       "answers": [
         {
           "id": "q52a1",
@@ -1506,7 +1506,7 @@
       "questionType": 7
     },
     {
-      "question": "Which philosopher explored Digital cinema through their analysis of Digital cinema?",
+      "question": "Who wrote 'The Virtual Life of Film'?",
       "answers": [
         {
           "id": "q56a1",
@@ -1611,7 +1611,7 @@
       "questionType": 2
     },
     {
-      "question": "Which theorist developed the concept of Digital cinema in Digital Cinema and the History of a Moving Image?",
+      "question": "Who wrote 'Digital Cinema and the History of a Moving Image'?",
       "answers": [
         {
           "id": "q59a1",
@@ -1681,7 +1681,7 @@
       "questionType": 6
     },
     {
-      "question": "Which philosopher developed the theory of Readymade in 1913?",
+      "question": "Who developed the concept of 'The Algorithm as Readymade'?",
       "answers": [
         {
           "id": "q61a1",
@@ -1786,7 +1786,7 @@
       "questionType": 5
     },
     {
-      "question": "Whose work \"Hallucination as Critical Practice\" revolutionized our understanding of Simulacra?",
+      "question": "Who wrote about 'Hallucination as Critical Practice'?",
       "answers": [
         {
           "id": "q64a1",
@@ -1856,7 +1856,7 @@
       "questionType": 7
     },
     {
-      "question": "Which 1967 work established Conceptual tokens as a critical concept?",
+      "question": "Who developed the concept of 'Token as Gesture'?",
       "answers": [
         {
           "id": "q66a1",
@@ -1926,7 +1926,7 @@
       "questionType": 5
     },
     {
-      "question": "Which philosopher explored Organizational scores through their analysis of Performance scores?",
+      "question": "Who wrote 'Governance as Score'?",
       "answers": [
         {
           "id": "q68a1",
@@ -1996,7 +1996,7 @@
       "questionType": 7
     },
     {
-      "question": "Which theorist analyzed Digital satire in their work \"Digital Menippean Satire\"?",
+      "question": "Who developed the concept of 'Digital Menippean Satire'?",
       "answers": [
         {
           "id": "q70a1",
@@ -2031,7 +2031,7 @@
       "questionType": 6
     },
     {
-      "question": "How did \"Prompt as Performance\" change our understanding of Instruction art?",
+      "question": "Who developed the concept of 'Prompt as Performance'?",
       "answers": [
         {
           "id": "q71a1",
@@ -2101,7 +2101,7 @@
       "questionType": 5
     },
     {
-      "question": "Which philosopher explored Network protocols through their analysis of Protocol studies?",
+      "question": "Who wrote 'Protocol Politics'?",
       "answers": [
         {
           "id": "q73a1",
@@ -2171,7 +2171,7 @@
       "questionType": 7
     },
     {
-      "question": "Which theorist analyzed GAN art in their work \"Generative Adversarial Aesthetics\"?",
+      "question": "Who developed the concept of 'Generative Adversarial Aesthetics'?",
       "answers": [
         {
           "id": "q75a1",
@@ -2206,7 +2206,7 @@
       "questionType": 6
     },
     {
-      "question": "Which philosopher explored AI creativity through their analysis of Computational creativity?",
+      "question": "Who wrote 'Artificial Intelligence and Art: A History'?",
       "answers": [
         {
           "id": "q76a1",
@@ -2276,7 +2276,7 @@
       "questionType": 2
     },
     {
-      "question": "Which philosopher explored Computational design through their analysis of Code art?",
+      "question": "Who wrote 'The Creative Code'?",
       "answers": [
         {
           "id": "q78a1",
@@ -2346,7 +2346,7 @@
       "questionType": 5
     },
     {
-      "question": "What did Sarah Friend reveal about the relationship between Prompt design and Prompt engineering?",
+      "question": "Who developed the concept of 'Prompt Engineering as Composition'?",
       "answers": [
         {
           "id": "q80a1",
@@ -2381,7 +2381,7 @@
       "questionType": 6
     },
     {
-      "question": "Which critical theorist challenged Electronic art in their 1993 work?",
+      "question": "Who wrote 'Art in the Age of Electronic Media'?",
       "answers": [
         {
           "id": "rep1a1",
@@ -2455,7 +2455,7 @@
       "questionType": 5
     },
     {
-      "question": "Which philosopher explored Computer graphics through their analysis of Digital art?",
+      "question": "Who wrote 'Computer Graphics and Art'?",
       "answers": [
         {
           "id": "ver1a1",
@@ -2529,7 +2529,7 @@
       "questionType": 5
     },
     {
-      "question": "Whose work \"Expanded Cinema\" revolutionized our understanding of Video art?",
+      "question": "Who wrote 'Expanded Cinema'?",
       "answers": [
         {
           "id": "ver3a1",
@@ -2603,7 +2603,7 @@
       "questionType": 7
     },
     {
-      "question": "Whose work \"Digital Contagions\" revolutionized our understanding of Media archaeology?",
+      "question": "Who wrote 'Digital Contagions: A Media Archaeology of Computer Viruses'?",
       "answers": [
         {
           "id": "ver5a1",
@@ -2677,7 +2677,7 @@
       "questionType": 5
     },
     {
-      "question": "Which critical theorist challenged Media theory in their 1999 work?",
+      "question": "Who wrote 'The Technological Imagination'?",
       "answers": [
         {
           "id": "ver7a1",
@@ -2751,7 +2751,7 @@
       "questionType": 7
     },
     {
-      "question": "Which theorist developed the concept of Information aesthetics in Aesthetica: Information Aesthetics?",
+      "question": "Who wrote 'The Aesthetics of Information'?",
       "answers": [
         {
           "id": "ver8a1",
@@ -2825,7 +2825,7 @@
       "questionType": 5
     },
     {
-      "question": "Which theorist developed the concept of Visual perception in The Optical Unconscious?",
+      "question": "Who wrote 'The Optical Unconscious'?",
       "answers": [
         {
           "id": "ver10a1",
@@ -2899,7 +2899,7 @@
       "questionType": 5
     },
     {
-      "question": "Which critical theorist challenged Film technology in their 1985 work?",
+      "question": "Who wrote 'Cinema and Technology'?",
       "answers": [
         {
           "id": "ver12a1",
@@ -2936,7 +2936,7 @@
       "questionType": 3
     },
     {
-      "question": "Whose work \"Digital Cinema: A False Revolution\" revolutionized our understanding of Digital cinema?",
+      "question": "Who wrote 'Digital Cinema: A False Revolution'?",
       "answers": [
         {
           "id": "ver13a1",
@@ -3010,7 +3010,7 @@
       "questionType": 5
     },
     {
-      "question": "Whose work \"The War of Desire and Technology at the Close of the Mechanical Age\" revolutionized our understanding of Virtual systems?",
+      "question": "Who wrote 'The War of Desire and Technology'?",
       "answers": [
         {
           "id": "ver15a1",
@@ -3047,7 +3047,7 @@
       "questionType": 1
     },
     {
-      "question": "Whose work \"The Time of Digital Poetry: From Object to Event\" revolutionized our understanding of Digital poetry?",
+      "question": "Who wrote 'The Time of Digital Poetry'?",
       "answers": [
         {
           "id": "ver16a1",
@@ -3193,7 +3193,7 @@
       "questionType": 1
     },
     {
-      "question": "Which 1940 work established Modernity as a critical concept?",
+      "question": "Which unfinished work analyzed 19th century Paris through its shopping arcades?",
       "answers": [
         {
           "id": "repl3a",

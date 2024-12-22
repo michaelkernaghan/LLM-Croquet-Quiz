@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Which 1935 work established Aura as a critical concept?",
+      "question": "Which theorist wrote 'The Work of Art in the Age of Mechanical Reproduction'?",
       "answers": [
         {
           "id": "q1a1",
@@ -771,7 +771,7 @@
       "questionType": 5
     },
     {
-      "question": "Who introduced the concept of Software as art medium to critical theory?",
+      "question": "Who developed the concept of 'software art'?",
       "answers": [
         {
           "id": "q23a1",
@@ -806,7 +806,7 @@
       "questionType": 6
     },
     {
-      "question": "Which Frankfurt School theorist wrote about Mechanical reproduction and Mechanical reproduction?",
+      "question": "Whose work \"Gramophone, Film, Typewriter\" revolutionized our understanding of Mechanical reproduction?",
       "answers": [
         {
           "id": "q24a1",
@@ -1016,7 +1016,7 @@
       "questionType": 6
     },
     {
-      "question": "How did \"The Dialectic of Enlightenment\" change our understanding of Enlightenment?",
+      "question": "Which Frankfurt School theorists collaborated on 'Dialectic of Enlightenment'?",
       "answers": [
         {
           "id": "q33a1",
@@ -1051,7 +1051,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed Authoritarianism in their work \"The Authoritarian Personality\"?",
+      "question": "Which philosopher explored Authoritarianism through their analysis of Authoritarianism?",
       "answers": [
         {
           "id": "q34a1",
@@ -1086,7 +1086,7 @@
       "questionType": 3
     },
     {
-      "question": "Which 1944 work established Culture industry as a critical concept?",
+      "question": "Which theorist developed the concept of Culture industry in The Culture Industry: Enlightenment as Mass Deception?",
       "answers": [
         {
           "id": "q35a1",
@@ -1121,7 +1121,7 @@
       "questionType": 6
     },
     {
-      "question": "Who introduced the concept of Authenticity to critical theory?",
+      "question": "Whose work \"The Jargon of Authenticity\" revolutionized our understanding of Authenticity?",
       "answers": [
         {
           "id": "q36a1",
@@ -1156,7 +1156,7 @@
       "questionType": 3
     },
     {
-      "question": "How did \"The Positivist Dispute in Germany\" change our understanding of Positivism?",
+      "question": "Which critical theorist challenged Positivism in their 1969 work?",
       "answers": [
         {
           "id": "q37a1",
@@ -1191,7 +1191,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed New music in their work \"The Philosophy of New Music\"?",
+      "question": "Which theorist developed the concept of New music in The Philosophy of New Music?",
       "answers": [
         {
           "id": "q40a1",
@@ -1226,7 +1226,7 @@
       "questionType": 3
     },
     {
-      "question": "Which theorist analyzed Cybernetic art in their work \"Cybernetic Serendipity\"?",
+      "question": "Who developed the concept of 'cybernetic serendipity'?",
       "answers": [
         {
           "id": "q48a1",
@@ -1366,7 +1366,7 @@
       "questionType": 7
     },
     {
-      "question": "How did \"Telematic Art\" change our understanding of Telematics?",
+      "question": "Who developed the concept of 'telematic art'?",
       "answers": [
         {
           "id": "q52a1",
@@ -1681,7 +1681,7 @@
       "questionType": 6
     },
     {
-      "question": "Which philosopher developed the theory of Readymade in 1913?",
+      "question": "Who developed the concept of 'The Algorithm as Readymade'?",
       "answers": [
         {
           "id": "q61a1",
@@ -1856,7 +1856,7 @@
       "questionType": 7
     },
     {
-      "question": "Which 1967 work established Conceptual tokens as a critical concept?",
+      "question": "Who developed the concept of 'Token as Gesture'?",
       "answers": [
         {
           "id": "q66a1",
@@ -1996,7 +1996,7 @@
       "questionType": 7
     },
     {
-      "question": "Which theorist analyzed Digital satire in their work \"Digital Menippean Satire\"?",
+      "question": "Who developed the concept of 'Digital Menippean Satire'?",
       "answers": [
         {
           "id": "q70a1",
@@ -2031,7 +2031,7 @@
       "questionType": 6
     },
     {
-      "question": "How did \"Prompt as Performance\" change our understanding of Instruction art?",
+      "question": "Who developed the concept of 'Prompt as Performance'?",
       "answers": [
         {
           "id": "q71a1",
@@ -2171,7 +2171,7 @@
       "questionType": 7
     },
     {
-      "question": "Which theorist analyzed GAN art in their work \"Generative Adversarial Aesthetics\"?",
+      "question": "Who developed the concept of 'Generative Adversarial Aesthetics'?",
       "answers": [
         {
           "id": "q75a1",
@@ -2346,7 +2346,7 @@
       "questionType": 5
     },
     {
-      "question": "What did Sarah Friend reveal about the relationship between Prompt design and Prompt engineering?",
+      "question": "Who developed the concept of 'Prompt Engineering as Composition'?",
       "answers": [
         {
           "id": "q80a1",
@@ -3193,7 +3193,7 @@
       "questionType": 1
     },
     {
-      "question": "Which 1940 work established Modernity as a critical concept?",
+      "question": "Which unfinished work analyzed 19th century Paris through its shopping arcades?",
       "answers": [
         {
           "id": "repl3a",

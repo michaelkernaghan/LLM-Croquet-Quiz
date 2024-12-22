@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Which 1935 work established Aura as a critical concept?",
+      "question": "What did Walter Benjamin reveal about the relationship between Aura and Mass media?",
       "answers": [
         {
           "id": "q1a1",
@@ -806,7 +806,7 @@
       "questionType": 6
     },
     {
-      "question": "Which Frankfurt School theorist wrote about Mechanical reproduction and Mechanical reproduction?",
+      "question": "What did Walter Benjamin reveal about the relationship between Mechanical reproduction and Mechanical reproduction?",
       "answers": [
         {
           "id": "q24a1",
@@ -1016,7 +1016,7 @@
       "questionType": 6
     },
     {
-      "question": "How did \"The Dialectic of Enlightenment\" change our understanding of Enlightenment?",
+      "question": "Which theorist analyzed Enlightenment in their work \"The Dialectic of Enlightenment\"?",
       "answers": [
         {
           "id": "q33a1",
@@ -1051,7 +1051,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed Authoritarianism in their work \"The Authoritarian Personality\"?",
+      "question": "What did Adorno reveal about the relationship between Authoritarianism and Authoritarianism?",
       "answers": [
         {
           "id": "q34a1",
@@ -1086,7 +1086,7 @@
       "questionType": 3
     },
     {
-      "question": "Which 1944 work established Culture industry as a critical concept?",
+      "question": "Who introduced the concept of Culture industry to critical theory?",
       "answers": [
         {
           "id": "q35a1",
@@ -1121,7 +1121,7 @@
       "questionType": 6
     },
     {
-      "question": "Who introduced the concept of Authenticity to critical theory?",
+      "question": "Which 1964 work established Authenticity as a critical concept?",
       "answers": [
         {
           "id": "q36a1",
@@ -1156,7 +1156,7 @@
       "questionType": 3
     },
     {
-      "question": "How did \"The Positivist Dispute in Germany\" change our understanding of Positivism?",
+      "question": "Which philosopher developed the theory of Positivism in 1969?",
       "answers": [
         {
           "id": "q37a1",
@@ -1191,7 +1191,7 @@
       "questionType": 6
     },
     {
-      "question": "Which theorist analyzed New music in their work \"The Philosophy of New Music\"?",
+      "question": "How did \"The Philosophy of New Music\" change our understanding of New music?",
       "answers": [
         {
           "id": "q40a1",
@@ -3193,7 +3193,7 @@
       "questionType": 1
     },
     {
-      "question": "Which 1940 work established Modernity as a critical concept?",
+      "question": "Who introduced the concept of Modernity to critical theory?",
       "answers": [
         {
           "id": "repl3a",
