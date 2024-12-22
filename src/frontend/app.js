@@ -6,14 +6,19 @@ let scores = {
     today: [],
     overall: []
 };
-let questions = [];  // Will be loaded from JSON
+let allQuestions = [];  // Store all questions
+let questions = [];      // Current quiz questions
+
+// Add to top of file with other state variables
+let lastPlayerName = '';
+let passwordVerified = false;
 
 // Load questions from JSON file
 fetch('art-questions.json')
     .then(response => response.json())
     .then(data => {
-        questions = data.questions;
-        // Shuffle questions
+        allQuestions = data.questions;  // Store all questions
+        questions = [...allQuestions];   // Make a copy for current quiz
         questions = questions.sort(() => Math.random() - 0.5);
         console.log(`Loaded ${questions.length} questions`);
     })
@@ -84,29 +89,61 @@ function startTimer() {
 }
 
 function handleTimeout() {
-    handleAnswer(-1, currentQuestion); // -1 indicates timeout
+    clearInterval(timer);
+    
+    // Show "Time's up!" message
+    const timeupMessage = document.createElement('div');
+    timeupMessage.className = 'timeout-message';
+    timeupMessage.textContent = "Time's up!";
+    answersGrid.appendChild(timeupMessage);
+    
+    // Disable all answer buttons
+    const buttons = answersGrid.querySelectorAll('button');
+    buttons.forEach(button => button.disabled = true);
+    
+    // Show correct answer
+    const correctAnswer = questions[currentQuestion].answers.find(a => a.correct);
+    if (correctAnswer) {
+        const correctButton = Array.from(buttons)
+            .find(button => button.textContent === correctAnswer.answer);
+        if (correctButton) {
+            correctButton.style.color = '#4CAF50';
+            correctButton.style.fontWeight = 'bold';
+        }
+    }
+    
+    // Wait and move to next question
+    setTimeout(() => {
+        currentQuestion++;
+        if (currentQuestion < Math.min(totalQuestions, questions.length)) {
+            showQuestion(currentQuestion);
+        } else {
+            endQuiz();
+        }
+    }, 1500);
 }
 
 function showQuestion(index) {
     const question = questions[index];
     if (!question) return;
 
+    // Update question counter in top-right
+    currentQuestionSpan.textContent = `${currentQuestion + 1}/10`;
+
     questionDisplay.textContent = question.question;
     answersGrid.innerHTML = '';
-    timeLeftDisplay.textContent = '10';
-    isPaused = false;
-    pauseButton.textContent = '⏸️';
-
-    // Show current score
-    currentQuestionSpan.textContent = `Score: ${currentScore}/10 - Question ${currentQuestion + 1}`;
-
+    
+    // Create grid of answers with consistent styling
     question.answers.forEach((answerObj) => {
         const button = document.createElement('button');
         button.textContent = answerObj.answer;
+        button.className = 'answer-button';
         button.addEventListener('click', () => handleAnswer(answerObj.correct, index, answerObj.answer));
         answersGrid.appendChild(button);
     });
 
+    // Update timer display
+    timeLeftDisplay.textContent = timeLeft;
     startTimer();
 }
 
@@ -163,6 +200,14 @@ function initQuiz() {
     function validateInputs() {
         const nameValid = playerNameInput.value.trim() !== '';
         const passwordValid = passwordInput.value === CORRECT_PASSWORD;
+        playerName = playerNameInput.value.trim();
+        
+        console.log('Validating inputs:');
+        console.log('Name:', playerName);
+        console.log('Password entered:', passwordInput.value);
+        console.log('Expected password:', CORRECT_PASSWORD);
+        console.log('Password valid:', passwordValid);
+        console.log('Start button disabled:', startButton.disabled);
         
         if (passwordInput.value && !passwordValid) {
             passwordError.textContent = 'Incorrect password';
@@ -184,13 +229,20 @@ function initQuiz() {
     playerNameInput.addEventListener('input', validateInputs);
     passwordInput.addEventListener('input', validateInputs);
 
-    startButton.addEventListener('click', () => {
+    startButton.onclick = () => {
+        console.log('Start button clicked');
+        console.log('Player name:', playerName);
+        console.log('Password valid:', passwordInput.value === CORRECT_PASSWORD);
+        
         if (playerName && passwordInput.value === CORRECT_PASSWORD) {
+            console.log('Starting quiz...');
             startScreen.style.display = 'none';
             quizScreen.style.display = 'block';
             startQuiz();
+        } else {
+            console.log('Validation failed:', { playerName, password: passwordInput.value });
         }
-    });
+    };
 
     updateScoreboards();
     currentQuestionSpan.textContent = currentQuestion + 1;
@@ -208,40 +260,90 @@ function updateScoreboards() {
     const sortedToday = [...scores.today].sort((a, b) => b.score - a.score);
     const sortedOverall = [...scores.overall].sort((a, b) => b.score - a.score);
 
+    console.log('Updating scoreboards:');
+    console.log('Today scores:', sortedToday);
+    console.log('Overall scores:', sortedOverall);
+
     todayScores.innerHTML = sortedToday
         .slice(0, 5)
-        .map(score => `<div class="score-entry">
-            <span>${score.name}</span>
-            <span>${score.score}/10</span>
-        </div>`)
+        .map(score => {
+            const rating = getRating(score.score);
+            console.log(`Score ${score.score} gets color ${rating.color} (${rating.title})`);
+            return `<div class="score-entry">
+                <span>${score.name}</span>
+                <span style="color: ${rating.color}; font-weight: bold; font-size: 16px; text-shadow: 0 0 1px rgba(0,0,0,0.2);">${score.score}/10</span>
+            </div>`;
+        })
         .join('');
 
     overallScores.innerHTML = sortedOverall
         .slice(0, 5)
-        .map(score => `<div class="score-entry">
-            <span>${score.name}</span>
-            <span>${score.score}/10</span>
-        </div>`)
+        .map(score => {
+            const rating = getRating(score.score);
+            console.log(`Score ${score.score} gets color ${rating.color} (${rating.title})`);
+            return `<div class="score-entry">
+                <span>${score.name}</span>
+                <span style="color: ${rating.color}; font-weight: bold; font-size: 16px; text-shadow: 0 0 1px rgba(0,0,0,0.2);">${score.score}/10</span>
+            </div>`;
+        })
         .join('');
 }
 
 function endQuiz() {
     clearInterval(timer);
+    
+    // Hide timer and controls
+    document.querySelector('.timer-controls').style.display = 'none';
+    
+    // Show end screen
     questionDisplay.textContent = 'Quiz Complete!';
-    answersGrid.innerHTML = `<p>Your final score: ${currentScore}/10</p>`;
+    
+    // Get rating based on score
+    const rating = getRating(currentScore);
+    
+    answersGrid.innerHTML = `
+        <div class="end-screen">
+            <p class="final-score" style="color: ${rating.color}; font-weight: bold; font-size: 24px;">
+                Your final score: ${currentScore}/10
+            </p>
+            <p class="rating-title" style="font-weight: bold; font-size: 20px;">
+                You have achieved ${rating.title} status!
+            </p>
+            <button onclick="restartQuiz()" class="play-again">Play Again</button>
+        </div>
+    `;
     
     // Update high scores
     scores.today.push({ name: playerName, score: currentScore });
     scores.overall.push({ name: playerName, score: currentScore });
     
-    // Sort and limit to top 5 scores
-    scores.today.sort((a, b) => b.score - a.score);
-    scores.overall.sort((a, b) => b.score - a.score);
-    scores.today = scores.today.slice(0, 5);
-    scores.overall = scores.overall.slice(0, 5);
+    // Fix the slice operation
+    scores.today = scores.today.sort((a, b) => b.score - a.score).slice(0, 5);
+    scores.overall = scores.overall.sort((a, b) => b.score - a.score).slice(0, 5);
     
     saveScores();
     updateScoreboards();
+}
+
+function getRating(score) {
+    console.log('Getting rating for score:', score);
+    const ratings = [
+        { score: 0, color: '#0000FF', title: 'John Baldessari', description: 'Conceptual foundations' },
+        { score: 1, color: '#4000FF', title: 'Yoko Ono', description: 'Instruction pieces' },
+        { score: 2, color: '#8000FF', title: 'Hans Haacke', description: 'Institutional critique' },
+        { score: 3, color: '#C000FF', title: 'Adrian Piper', description: 'Conceptual performance' },
+        { score: 4, color: '#FF00FF', title: 'Lawrence Weiner', description: 'Language as art' },
+        { score: 5, color: '#FF0080', title: 'Marina Abramović', description: 'Performance art pioneer' },
+        { score: 6, color: '#FF0040', title: 'Jenny Holzer', description: 'Text art master' },
+        { score: 7, color: '#FF4000', title: 'Bruce Nauman', description: 'Multi-media pioneer' },
+        { score: 8, color: '#FF8000', title: 'Marcel Broodthaers', description: 'Institutional poetry' },
+        { score: 9, color: '#FFC000', title: 'Marcel Duchamp', description: 'Readymade revolutionary' },
+        { score: 10, color: '#FFFF00', title: 'Joseph Beuys', description: 'Social sculpture master' }
+    ];
+    
+    const rating = ratings[score];
+    console.log('Returned rating:', rating);
+    return rating;
 }
 
 // Fix pause functionality
@@ -271,5 +373,18 @@ skipButton.addEventListener('click', () => {
         endQuiz();
     }
 });
+
+// Add new restart function instead of location.reload():
+function restartQuiz() {
+    // Get fresh copy of questions and shuffle
+    questions = [...allQuestions].sort(() => Math.random() - 0.5);
+    
+    startScreen.style.display = 'none';
+    quizScreen.style.display = 'block';
+    currentQuestion = 0;
+    currentScore = 0;
+    document.querySelector('.timer-controls').style.display = 'flex';
+    showQuestion(currentQuestion);
+}
 
 document.addEventListener('DOMContentLoaded', initQuiz); 
