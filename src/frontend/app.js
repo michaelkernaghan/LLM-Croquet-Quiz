@@ -13,6 +13,9 @@ let questions = [];      // Current quiz questions
 let lastPlayerName = '';
 let passwordVerified = false;
 
+// Add to state variables at top
+const ADMIN_PASSWORD = 'admin';
+
 // Load questions from JSON file
 fetch('art-questions.json')
     .then(response => response.json())
@@ -255,6 +258,25 @@ function startQuiz() {
     showQuestion(currentQuestion);
 }
 
+// Add reset scores functionality
+function resetScores() {
+    const adminPassword = prompt('Enter admin password to reset scores:');
+    if (adminPassword === ADMIN_PASSWORD) {
+        const confirmReset = confirm('Are you sure you want to reset all scores? This cannot be undone.');
+        if (confirmReset) {
+            scores = {
+                today: [],
+                overall: []
+            };
+            saveScores();
+            updateScoreboards();
+            alert('Scores have been reset.');
+        }
+    } else {
+        alert('Incorrect admin password.');
+    }
+}
+
 // Update scoreboards and endQuiz functions remain the same
 function updateScoreboards() {
     const sortedToday = [...scores.today].sort((a, b) => b.score - a.score);
@@ -264,24 +286,38 @@ function updateScoreboards() {
     console.log('Today scores:', sortedToday);
     console.log('Overall scores:', sortedOverall);
 
-    todayScores.innerHTML = sortedToday
-        .slice(0, 5)
-        .map(score => {
-            const rating = getRating(score.score);
-            console.log(`Score ${score.score} gets color ${rating.color} (${rating.title})`);
-            return `<div class="score-entry">
-                <span>${score.name}</span>
-                <span style="color: ${rating.color}; font-weight: bold; font-size: 16px; text-shadow: 0 0 1px rgba(0,0,0,0.2);">${score.score}/10</span>
-            </div>`;
-        })
-        .join('');
+    // Add reset button above scores
+    const resetButton = `
+        <button onclick="resetScores()" 
+                style="margin-bottom: 10px; padding: 5px 10px; 
+                       background: #ff4444; color: white; 
+                       border: none; border-radius: 4px;
+                       cursor: pointer;">
+            Reset Scores
+        </button>
+    `;
+
+    todayScores.innerHTML = 
+        resetButton +
+        sortedToday
+            .slice(0, 10)
+            .map(score => {
+                const rating = getRating(score.score);
+                console.log(`Score ${score.score} gets color ${rating.color} (${rating.title})`);
+                return `<div class="score-entry">
+                    <span>${score.name}</span>
+                    <span style="color: ${rating.color}; font-weight: bold; font-size: 16px; text-shadow: 0 0 1px rgba(0,0,0,0.2);">${score.score}/10</span>
+                </div>`;
+            })
+            .join('');
 
     overallScores.innerHTML = sortedOverall
-        .slice(0, 5)
+        .slice(0, 10)
         .map(score => {
             const rating = getRating(score.score);
             console.log(`Score ${score.score} gets color ${rating.color} (${rating.title})`);
             return `<div class="score-entry">
+                <span style="opacity: 0.7; font-size: 12px;">${score.date || 'Classic'}</span>
                 <span>${score.name}</span>
                 <span style="color: ${rating.color}; font-weight: bold; font-size: 16px; text-shadow: 0 0 1px rgba(0,0,0,0.2);">${score.score}/10</span>
             </div>`;
@@ -313,37 +349,34 @@ function endQuiz() {
         </div>
     `;
     
-    // Update high scores
+    // Update high scores with date
+    const today = new Date().toISOString().split('T')[0];
     scores.today.push({ name: playerName, score: currentScore });
-    scores.overall.push({ name: playerName, score: currentScore });
+    scores.overall.push({ name: playerName, score: currentScore, date: today });
     
-    // Fix the slice operation
-    scores.today = scores.today.sort((a, b) => b.score - a.score).slice(0, 5);
-    scores.overall = scores.overall.sort((a, b) => b.score - a.score).slice(0, 5);
+    // Fix the slice operation for more scores
+    scores.today = scores.today.sort((a, b) => b.score - a.score).slice(0, 10);
+    scores.overall = scores.overall.sort((a, b) => b.score - a.score).slice(0, 10);
     
     saveScores();
     updateScoreboards();
 }
 
 function getRating(score) {
-    console.log('Getting rating for score:', score);
     const ratings = [
-        { score: 0, color: '#0000FF', title: 'John Baldessari', description: 'Conceptual foundations' },
-        { score: 1, color: '#4000FF', title: 'Yoko Ono', description: 'Instruction pieces' },
-        { score: 2, color: '#8000FF', title: 'Hans Haacke', description: 'Institutional critique' },
-        { score: 3, color: '#C000FF', title: 'Adrian Piper', description: 'Conceptual performance' },
-        { score: 4, color: '#FF00FF', title: 'Lawrence Weiner', description: 'Language as art' },
-        { score: 5, color: '#FF0080', title: 'Marina Abramović', description: 'Performance art pioneer' },
-        { score: 6, color: '#FF0040', title: 'Jenny Holzer', description: 'Text art master' },
-        { score: 7, color: '#FF4000', title: 'Bruce Nauman', description: 'Multi-media pioneer' },
-        { score: 8, color: '#FF8000', title: 'Marcel Broodthaers', description: 'Institutional poetry' },
-        { score: 9, color: '#FFC000', title: 'Marcel Duchamp', description: 'Readymade revolutionary' },
-        { score: 10, color: '#FFFF00', title: 'Joseph Beuys', description: 'Social sculpture master' }
+        { score: 0, color: '#0000FF', title: 'John Baldessari' },      // Deep Blue
+        { score: 1, color: '#0040FF', title: 'Yoko Ono' },            // Blue
+        { score: 2, color: '#0080FF', title: 'Hans Haacke' },         // Light Blue
+        { score: 3, color: '#00C0FF', title: 'Adrian Piper' },        // Sky Blue
+        { score: 4, color: '#00FFFF', title: 'Lawrence Weiner' },     // Cyan
+        { score: 5, color: '#FF00FF', title: 'Marina Abramović' },    // Magenta
+        { score: 6, color: '#FF0080', title: 'Jenny Holzer' },        // Pink
+        { score: 7, color: '#FF0040', title: 'Bruce Nauman' },        // Rose
+        { score: 8, color: '#FF0000', title: 'Marcel Broodthaers' },  // Red
+        { score: 9, color: '#C00000', title: 'Marcel Duchamp' },      // Dark Red
+        { score: 10, color: '#800000', title: 'Joseph Beuys' }        // Deep Red
     ];
-    
-    const rating = ratings[score];
-    console.log('Returned rating:', rating);
-    return rating;
+    return ratings[score];
 }
 
 // Fix pause functionality
