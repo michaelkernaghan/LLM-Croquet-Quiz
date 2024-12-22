@@ -1,93 +1,38 @@
-/* Reset and base styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f8f9fa;
+:root {
+    --navy-blue: #1a2c46;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --text-dark: #333;
+    --border-color: #e1e4e8;
 }
 
-/* Main layout */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 20px;
+}
+
 .layout {
     display: grid;
     grid-template-columns: 300px 1fr 300px;
     gap: 20px;
-    padding: 20px;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-/* Sidebar styles */
-.sidebar-left, .sidebar-right {
-    background: white;
+/* Left sidebar */
+.sidebar-left {
+    background: var(--white);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Main content area */
-.main-content {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-/* Question counter */
-.question-counter {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Question display */
-.question-display {
-    font-size: 1.4em;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-/* Answers grid */
-.answers-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-.answer-option {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.answer-option:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Navigation controls */
-.navigation-controls {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.nav-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* High scores section */
 .high-scores h2 {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 16px;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -95,43 +40,212 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* Past quizzes section */
-.past-quizzes {
-    margin-top: 20px;
+/* Main content */
+.main-content {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.quiz-entry {
+.question-counter {
+    text-align: right;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.question-display {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 40px 0;
+    color: #333;
+}
+
+.answers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.answers-grid button {
+    background: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 100px;
+}
+
+.answers-grid button:disabled {
+    cursor: default;
+    border-color: #e1e4e8;
+    background: white;
+}
+
+.answers-grid button:hover {
+    background: #f5f7f9;
+    border-color: #c8ccd1;
+}
+
+.timer-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.timer-circle {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Right sidebar */
+.sidebar-right {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.past-quiz-entry {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.quiz-date {
+/* Quiz rules */
+.quiz-rules {
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #516075;
+}
+
+.quiz-rules ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.quiz-rules li {
+    margin: 5px 0;
+}
+
+/* Theory info styling */
+.theory-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.theory-info h3 {
+    color: #1a2c46;
+    margin-bottom: 10px;
+}
+
+.theory-info p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+#start-screen {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#start-screen h2 {
+    font-size: 28px;
+    color: var(--navy-blue);
+    margin-bottom: 20px;
+}
+
+#start-screen p {
+    font-size: 18px;
     color: #666;
+    margin-bottom: 30px;
 }
 
-.quiz-score {
-    font-weight: bold;
+.name-input-section {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-/* Responsive design */
-@media (max-width: 1200px) {
-    .layout {
-        grid-template-columns: 250px 1fr 250px;
-    }
+.name-input-section input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
 }
 
-@media (max-width: 992px) {
-    .layout {
-        grid-template-columns: 1fr;
-    }
-    
-    .sidebar-left, .sidebar-right {
-        display: none;
-    }
+.name-input-section input.error {
+    border-color: #f44336;
 }
- 
+
+.error-message {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 15px;
+    min-height: 20px;
+}
+
+#password-input {
+    margin-bottom: 5px;  /* Reduced because error message follows */
+}
+
+.password-valid {
+    border-color: #4CAF50 !important;
+}
+
+#start-button {
+    background: var(--navy-blue);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#start-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#start-button:hover:not(:disabled) {
+    background: #2a3f61;
+} 

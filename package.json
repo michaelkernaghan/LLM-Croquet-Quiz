@@ -1,7 +1,7 @@
 {
-  "name": "art-theory-quiz",
+  "name": "critical-theory-quiz",
   "version": "1.0.0",
-  "description": "Art Theory Quiz Game",
+  "description": "A quiz application for art theory",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
