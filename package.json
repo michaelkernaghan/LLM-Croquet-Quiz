@@ -4,6 +4,7 @@
   "description": "A quiz application for art theory",
   "main": "src/server.js",
   "scripts": {
+    "backup": "cp src/frontend/art-questions.json backups/art-questions-$(date +%Y%m%d-%H%M%S).json",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js"
   },
