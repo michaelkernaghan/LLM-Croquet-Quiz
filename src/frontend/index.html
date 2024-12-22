@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Theory Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="layout">
+            <div class="sidebar-left">
+                <div class="high-scores">
+                    <h2>Today's High Score</h2>
+                    <div id="today-scores">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                    
+                    <h2>Overall High Score</h2>
+                    <div id="overall-scores">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="question-counter">
+                    <!-- Will show current question number -->
+                </div>
+                <div class="question-display">
+                    <!-- Will show current question -->
+                </div>
+                <div class="answers-grid">
+                    <!-- Will be populated with answer options -->
+                </div>
+                <div class="navigation-controls">
+                    <button class="nav-button" id="pause-button">⏸️</button>
+                    <button class="nav-button" id="next-button">⏭️</button>
+                </div>
+            </div>
+
+            <div class="sidebar-right">
+                <h2>Past Quizzes</h2>
+                <div id="past-quizzes">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
