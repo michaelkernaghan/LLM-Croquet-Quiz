@@ -33,9 +33,7 @@
         "significance": "Foundational text in modern art theory and cultural studies",
         "related_concepts": "Mass media, authenticity, cultural democratization"
       },
-      "questionType": 1,
-      "citation": "Benjamin, W. (1935). Das Kunstwerk im Zeitalter seiner technischen Reproduzierbarkeit. Zeitschrift für Sozialforschung",
-      "category": "Critical Theory"
+      "questionType": 1
     },
     {
       "question": "Who coined the term 'Institutional Critique' in their artistic practice?",
@@ -70,9 +68,7 @@
         "significance": "Established critical framework for analyzing art world power structures",
         "related_concepts": "Site-specificity, contextual art, political art"
       },
-      "questionType": 2,
-      "citation": "Haacke, H. (1970). Shapolsky et al. Manhattan Real Estate Holdings, A Real Time Social System",
-      "category": "Art Theory"
+      "questionType": 2
     },
     {
       "question": "Which philosopher wrote 'The Origin of the Work of Art'?",
@@ -107,9 +103,7 @@
         "significance": "Major influence on modern art theory and aesthetics",
         "related_concepts": "Phenomenology, truth in art, aesthetic theory"
       },
-      "questionType": 3,
-      "citation": "Heidegger, M. (1935). Der Ursprung des Kunstwerkes. Holzwege, Frankfurt am Main: Vittorio Klostermann",
-      "category": "Critical Theory"
+      "questionType": 3
     },
     {
       "question": "Which critic introduced the concept of 'Greenbergian Modernism'?",
@@ -144,9 +138,7 @@
         "significance": "Defined modernist art criticism for decades",
         "related_concepts": "Formalism, abstract expressionism, art criticism"
       },
-      "questionType": 4,
-      "citation": "Greenberg, C. (1960). Modernist Painting. Forum Lectures, Voice of America",
-      "category": "Art Theory"
+      "questionType": 4
     },
     {
       "question": "Who wrote 'The Society of the Spectacle'?",
@@ -181,9 +173,7 @@
         "significance": "Influenced contemporary art and media theory",
         "related_concepts": "Situationism, consumer culture, media critique"
       },
-      "questionType": 5,
-      "citation": "Debord, G. (1967). La Société du Spectacle. Paris: Buchet-Chastel",
-      "category": "Critical Theory"
+      "questionType": 5
     },
     {
       "question": "Who wrote 'Ways of Seeing'?",
@@ -218,9 +208,7 @@
         "significance": "Revolutionary approach to art criticism and visual analysis",
         "related_concepts": "Visual culture, feminism, art reproduction, mass media"
       },
-      "questionType": 1,
-      "citation": "Berger, J. (1972). Ways of Seeing. London: BBC and Penguin Books",
-      "category": "Art Theory"
+      "questionType": 1
     },
     {
       "question": "Which feminist art historian wrote 'Why Have There Been No Great Women Artists?'",
@@ -255,9 +243,7 @@
         "significance": "Foundational text for feminist art history",
         "related_concepts": "Feminist theory, institutional critique, gender studies"
       },
-      "questionType": 2,
-      "citation": "Nochlin, L. (1971). Why Have There Been No Great Women Artists? ARTnews, January 1971",
-      "category": "Art Theory"
+      "questionType": 2
     },
     {
       "question": "Which philosopher introduced the concept of 'simulacra' in art theory?",
@@ -292,9 +278,7 @@
         "significance": "Influenced understanding of contemporary media and art",
         "related_concepts": "Postmodernism, media theory, representation"
       },
-      "questionType": 3,
-      "citation": "Baudrillard, J. (1981). Simulacres et Simulation. Paris: Éditions Galilée",
-      "category": "Critical Theory"
+      "questionType": 3
     },
     {
       "question": "Who wrote 'The Death of the Author'?",
@@ -329,9 +313,7 @@
         "significance": "Revolutionized understanding of authorship and interpretation in art",
         "related_concepts": "Post-structuralism, reader-response theory, interpretation"
       },
-      "questionType": 4,
-      "citation": "Barthes, R. (1967). La mort de l'auteur. Aspen, No. 5-6",
-      "category": "Critical Theory"
+      "questionType": 4
     },
     {
       "question": "Which art historian developed the concept of 'iconology'?",
@@ -366,9 +348,7 @@
         "significance": "Established methodology for analyzing visual meaning in art history",
         "related_concepts": "Iconography, symbolism, art historical methodology"
       },
-      "questionType": 5,
-      "citation": "Panofsky, E. (1939). Studies in Iconology. Oxford University Press",
-      "category": "Art Theory"
+      "questionType": 5
     },
     {
       "question": "Which year was 'Digital Art' by Christiane Paul first published?",
@@ -403,9 +383,7 @@
         "significance": "First major theoretical framework for digital art",
         "related_concepts": "New media art, interactive art, computer art"
       },
-      "questionType": 5,
-      "citation": "Paul, C. (2003). Digital Art. London: Thames & Hudson",
-      "category": "Digital Theory"
+      "questionType": 5
     },
     {
       "question": "Who wrote 'Artificial Hells: Participatory Art and the Politics of Spectatorship'?",
@@ -440,9 +418,7 @@
         "significance": "Key text in understanding contemporary participatory practices",
         "related_concepts": "Social practice, relational aesthetics, performance art"
       },
-      "questionType": 6,
-      "citation": "Bishop, C. (2012). Artificial Hells: Participatory Art and the Politics of Spectatorship. London: Verso",
-      "category": "Art Theory"
+      "questionType": 6
     },
     {
       "question": "Which performance artist wrote 'Walk Through Walls: A Memoir'?",
@@ -582,9 +558,7 @@
         "significance": "Established theoretical framework for understanding new media",
         "related_concepts": "Digital aesthetics, computational media, interface theory"
       },
-      "questionType": 1,
-      "citation": "Manovich, L. (2001). The Language of New Media. Cambridge: MIT Press",
-      "category": "Digital Theory"
+      "questionType": 1
     },
     {
       "question": "Which year was 'Internet Art' by Rachel Greene published?",
@@ -619,9 +593,7 @@
         "significance": "Established historical framework for internet art",
         "related_concepts": "Digital art, network culture, web-based art"
       },
-      "questionType": 5,
-      "citation": "Greene, R. (2004). Internet Art. London: Thames & Hudson",
-      "category": "Digital Theory"
+      "questionType": 5
     },
     {
       "question": "Which theorist developed the concept of 'remediation'?",
@@ -726,9 +698,7 @@
         "significance": "Fundamental text on exhibition space theory",
         "related_concepts": "Installation art, institutional theory, exhibition design"
       },
-      "questionType": 4,
-      "citation": "O'Doherty, B. (1976). Inside the White Cube. Artforum",
-      "category": "Art Theory"
+      "questionType": 4
     },
     {
       "question": "Who wrote 'Virtual Art: From Illusion to Immersion'?",
@@ -868,9 +838,7 @@
         "significance": "Foundational text in media theory and cultural studies",
         "related_concepts": "Mechanical reproduction, aura, media specificity"
       },
-      "questionType": 3,
-      "citation": "Kittler, F. (1986). Grammophon Film Typewriter. Berlin: Brinkmann & Bose",
-      "category": "Media Theory"
+      "questionType": 3
     },
     {
       "question": "Who wrote 'Protocol: How Control Exists After Decentralization'?",
@@ -4141,849 +4109,6 @@
         "citation": "Harvard University Press, Cambridge, MA, 2007"
       },
       "questionType": 4
-    },
-    {
-      "question": "Who wrote 'The Language of Post-Modern Architecture'?",
-      "answers": [
-        {
-          "id": "pma1",
-          "answer": "Charles Jencks",
-          "correct": true
-        },
-        {
-          "id": "pma2",
-          "answer": "Robert Venturi",
-          "correct": false
-        },
-        {
-          "id": "pma3",
-          "answer": "Peter Eisenman",
-          "correct": false
-        },
-        {
-          "id": "pma4",
-          "answer": "Kenneth Frampton",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Language of Post-Modern Architecture",
-        "year": 1977,
-        "author": "Charles Jencks",
-        "key_concepts": "Post-modern architecture, double coding, architectural semiotics",
-        "summary": "First major theoretical work defining post-modern architecture",
-        "significance": "Established framework for understanding post-modern architecture",
-        "related_concepts": "Architectural theory, semiotics, post-modernism"
-      },
-      "questionType": 1
-    },
-    {
-      "question": "Which artist pioneered 'Telephone Pictures' in 1922?",
-      "answers": [
-        {
-          "id": "tp1",
-          "answer": "László Moholy-Nagy",
-          "correct": true
-        },
-        {
-          "id": "tp2",
-          "answer": "El Lissitzky",
-          "correct": false
-        },
-        {
-          "id": "tp3",
-          "answer": "Theo van Doesburg",
-          "correct": false
-        },
-        {
-          "id": "tp4",
-          "answer": "Kazimir Malevich",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Telephone Pictures",
-        "year": 1922,
-        "author": "László Moholy-Nagy",
-        "key_concepts": "Technological reproduction, remote creation, industrial production",
-        "summary": "First artwork created by telephone instructions to factory",
-        "significance": "Pioneered concept of remote artistic production",
-        "related_concepts": "Industrial art, technological reproduction, conceptual art"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Who wrote 'The Transparency of Evil'?",
-      "answers": [
-        {
-          "id": "te1",
-          "answer": "Jean Baudrillard",
-          "correct": true
-        },
-        {
-          "id": "te2",
-          "answer": "Paul Virilio",
-          "correct": false
-        },
-        {
-          "id": "te3",
-          "answer": "Gilles Deleuze",
-          "correct": false
-        },
-        {
-          "id": "te4",
-          "answer": "Jacques Derrida",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Transparency of Evil",
-        "year": 1990,
-        "author": "Jean Baudrillard",
-        "key_concepts": "Simulation, evil, transparency",
-        "summary": "Analysis of evil in an age of transparency and simulation",
-        "significance": "Key text in understanding contemporary media culture",
-        "related_concepts": "Simulation, media theory, transparency"
-      },
-      "questionType": 1
-    },
-    {
-      "question": "Which artist pioneered 'Form Art' in 1997?",
-      "answers": [
-        {
-          "id": "fa1",
-          "answer": "Alexei Shulgin",
-          "correct": true
-        },
-        {
-          "id": "fa2",
-          "answer": "Vuk Ćosić",
-          "correct": false
-        },
-        {
-          "id": "fa3",
-          "answer": "Olia Lialina",
-          "correct": false
-        },
-        {
-          "id": "fa4",
-          "answer": "JODI",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Form Art",
-        "year": 1997,
-        "author": "Alexei Shulgin",
-        "key_concepts": "Net.art, interface aesthetics, HTML forms",
-        "summary": "First artwork using HTML form elements as artistic medium",
-        "significance": "Pioneered interface elements as artistic material",
-        "related_concepts": "Net.art, interface art, web aesthetics"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Who developed 'Quiz as Critical Practice' methodology?",
-      "answers": [
-        {
-          "id": "qcp1",
-          "answer": "Kernaghan & Sonnet",
-          "correct": true
-        },
-        {
-          "id": "qcp2",
-          "answer": "Claire Bishop",
-          "correct": false
-        },
-        {
-          "id": "qcp3",
-          "answer": "Boris Groys",
-          "correct": false
-        },
-        {
-          "id": "qcp4",
-          "answer": "Nicolas Bourriaud",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Quiz as Critical Practice",
-        "year": 2024,
-        "author": "Kernaghan & Sonnet",
-        "key_concepts": "Self-reference, algorithmic critique, institutional reflection",
-        "summary": "Framework for using quiz formats as critical theory methodology",
-        "significance": "Established quiz-based critical practice methodology",
-        "related_concepts": "Institutional critique, self-reference, algorithmic art",
-        "citation": "standardtesting.io/llm-art"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Who wrote 'Minima Moralia: Reflections from Damaged Life'?",
-      "answers": [
-        {
-          "id": "mm1",
-          "answer": "Theodor Adorno",
-          "correct": true
-        },
-        {
-          "id": "mm2",
-          "answer": "Max Horkheimer",
-          "correct": false
-        },
-        {
-          "id": "mm3",
-          "answer": "Walter Benjamin",
-          "correct": false
-        },
-        {
-          "id": "mm4",
-          "answer": "Herbert Marcuse",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Minima Moralia",
-        "year": 1951,
-        "author": "Theodor Adorno",
-        "key_concepts": "Critical reflection, damaged life, philosophical fragments",
-        "summary": "Collection of reflections on modern life and culture",
-        "significance": "Key text on critical self-reflection and cultural critique",
-        "related_concepts": "Critical theory, reflection, modern life"
-      },
-      "questionType": 1
-    },
-    {
-      "question": "Who wrote 'The Critical Statement as Form'?",
-      "answers": [
-        {
-          "id": "cs1",
-          "answer": "Joseph Kosuth",
-          "correct": true
-        },
-        {
-          "id": "cs2",
-          "answer": "Sol LeWitt",
-          "correct": false
-        },
-        {
-          "id": "cs3",
-          "answer": "Lawrence Weiner",
-          "correct": false
-        },
-        {
-          "id": "cs4",
-          "answer": "Robert Morris",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Art After Philosophy",
-        "year": 1969,
-        "author": "Joseph Kosuth",
-        "key_concepts": "Critical statements, conceptual art, artistic propositions",
-        "summary": "Analysis of critical statements as artistic form",
-        "significance": "Established critical statements as artistic medium",
-        "related_concepts": "Conceptual art, language art, institutional critique",
-        "citation": "Studio International, October 1969"
-      },
-      "questionType": 1
-    },
-    {
-      "question": "Which theorist pioneered 'Critical Statement as Methodology'?",
-      "answers": [
-        {
-          "id": "csm1",
-          "answer": "Kernaghan & Sonnet",
-          "correct": true
-        },
-        {
-          "id": "csm2",
-          "answer": "Claire Bishop",
-          "correct": false
-        },
-        {
-          "id": "csm3",
-          "answer": "Boris Groys",
-          "correct": false
-        },
-        {
-          "id": "csm4",
-          "answer": "Nicolas Bourriaud",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Critical Statement as Methodology",
-        "year": 2024,
-        "author": "Kernaghan & Sonnet",
-        "key_concepts": "Self-reference, algorithmic critique, institutional reflection",
-        "summary": "Framework using critical statements as artistic methodology",
-        "significance": "Established critical statements as LLM art practice",
-        "related_concepts": "LLM art, critical practice, self-reference",
-        "citation": "standardtesting.io/llm-art"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Who coined the term 'Technological Sublime'?",
-      "answers": [
-        {
-          "id": "ts1",
-          "answer": "Leo Marx",
-          "correct": true
-        },
-        {
-          "id": "ts2",
-          "answer": "Marshall McLuhan",
-          "correct": false
-        },
-        {
-          "id": "ts3",
-          "answer": "Lewis Mumford",
-          "correct": false
-        },
-        {
-          "id": "ts4",
-          "answer": "Jacques Ellul",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Machine in the Garden",
-        "year": 1964,
-        "author": "Leo Marx",
-        "key_concepts": "Technological sublime, pastoral ideal, industrial progress",
-        "summary": "Analysis of technology's impact on American pastoral ideals",
-        "significance": "Established framework for understanding technological awe",
-        "related_concepts": "Sublime, technological progress, cultural criticism"
-      },
-      "questionType": 2
-    },
-    {
-      "question": "Who developed the concept of 'Media Archaeology'?",
-      "answers": [
-        {
-          "id": "ma1",
-          "answer": "Friedrich Kittler",
-          "correct": true
-        },
-        {
-          "id": "ma2",
-          "answer": "Wolfgang Ernst",
-          "correct": false
-        },
-        {
-          "id": "ma3",
-          "answer": "Siegfried Zielinski",
-          "correct": false
-        },
-        {
-          "id": "ma4",
-          "answer": "Jussi Parikka",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Discourse Networks 1800/1900",
-        "year": 1985,
-        "author": "Friedrich Kittler",
-        "key_concepts": "Media archaeology, technological determinism, discourse analysis",
-        "summary": "Established methodology for analyzing media systems historically",
-        "significance": "Founded media archaeology as research methodology",
-        "related_concepts": "Media history, technological analysis, discourse networks"
-      },
-      "questionType": 2
-    },
-    {
-      "question": "Who coined the term 'Global Village'?",
-      "answers": [
-        {
-          "id": "gv1",
-          "answer": "Marshall McLuhan",
-          "correct": true
-        },
-        {
-          "id": "gv2",
-          "answer": "Harold Innis",
-          "correct": false
-        },
-        {
-          "id": "gv3",
-          "answer": "Walter Ong",
-          "correct": false
-        },
-        {
-          "id": "gv4",
-          "answer": "Neil Postman",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Gutenberg Galaxy",
-        "year": 1962,
-        "author": "Marshall McLuhan",
-        "key_concepts": "Global village, electronic media, tribal society",
-        "summary": "Analysis of how electronic media creates global interconnectedness",
-        "significance": "Key concept in understanding media globalization",
-        "related_concepts": "Electronic media, globalization, tribal society"
-      },
-      "questionType": 2
-    },
-    {
-      "question": "Who developed the concept of 'Time-Binding'?",
-      "answers": [
-        {
-          "id": "tb1",
-          "answer": "Harold Innis",
-          "correct": true
-        },
-        {
-          "id": "tb2",
-          "answer": "Marshall McLuhan",
-          "correct": false
-        },
-        {
-          "id": "tb3",
-          "answer": "Lewis Mumford",
-          "correct": false
-        },
-        {
-          "id": "tb4",
-          "answer": "Walter Benjamin",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Empire and Communications",
-        "year": 1950,
-        "author": "Harold Innis",
-        "key_concepts": "Time-binding media, space-binding media, communication bias",
-        "summary": "Theory of how media shapes temporal and spatial relations",
-        "significance": "Foundation for understanding media's role in society",
-        "related_concepts": "Media bias, communication theory, temporal media"
-      },
-      "questionType": 2
-    },
-    {
-      "question": "Who wrote 'Suprematism and Non-Objective Art'?",
-      "answers": [
-        {
-          "id": "sup1",
-          "answer": "Kazimir Malevich",
-          "correct": true
-        },
-        {
-          "id": "sup2",
-          "answer": "El Lissitzky",
-          "correct": false
-        },
-        {
-          "id": "sup3",
-          "answer": "Vladimir Tatlin",
-          "correct": false
-        },
-        {
-          "id": "sup4",
-          "answer": "Alexander Rodchenko",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Suprematism and Non-Objective Art",
-        "year": 1915,
-        "author": "Kazimir Malevich",
-        "key_concepts": "Non-objective art, pure feeling, geometric abstraction",
-        "summary": "Theoretical foundation for non-objective art",
-        "significance": "Established framework for abstract art",
-        "related_concepts": "Abstract art, geometric form, pure art"
-      },
-      "questionType": 1
-    },
-    {
-      "question": "Which artist pioneered 'Readymade' as artistic methodology in 1913?",
-      "answers": [
-        {
-          "id": "rd1",
-          "answer": "Marcel Duchamp",
-          "correct": true
-        },
-        {
-          "id": "rd2",
-          "answer": "Francis Picabia",
-          "correct": false
-        },
-        {
-          "id": "rd3",
-          "answer": "Man Ray",
-          "correct": false
-        },
-        {
-          "id": "rd4",
-          "answer": "Guillaume Apollinaire",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Readymade",
-        "year": 1913,
-        "author": "Marcel Duchamp",
-        "key_concepts": "Found objects, artistic selection, anti-art",
-        "summary": "Theory of everyday objects as art through selection",
-        "significance": "Revolutionized concept of artistic creation",
-        "related_concepts": "Found objects, conceptual art, anti-art"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Which theorist introduced 'Faktura' as a framework in 1916?",
-      "answers": [
-        {
-          "id": "fk1",
-          "answer": "Vladimir Markov",
-          "correct": true
-        },
-        {
-          "id": "fk2",
-          "answer": "Mikhail Larionov",
-          "correct": false
-        },
-        {
-          "id": "fk3",
-          "answer": "Natalia Goncharova",
-          "correct": false
-        },
-        {
-          "id": "fk4",
-          "answer": "David Burliuk",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Principles of Faktura",
-        "year": 1916,
-        "author": "Vladimir Markov",
-        "key_concepts": "Material surface, artistic technique, material expression",
-        "summary": "Theory of material surface as artistic meaning",
-        "significance": "Established material analysis in art theory",
-        "related_concepts": "Material studies, surface analysis, artistic technique"
-      },
-      "questionType": 4
-    },
-    {
-      "question": "Which theorist introduced 'Zaum' as poetic methodology in 1913?",
-      "answers": [
-        {
-          "id": "zm1",
-          "answer": "Aleksei Kruchenykh",
-          "correct": true
-        },
-        {
-          "id": "zm2",
-          "answer": "Velimir Khlebnikov",
-          "correct": false
-        },
-        {
-          "id": "zm3",
-          "answer": "Vladimir Mayakovsky",
-          "correct": false
-        },
-        {
-          "id": "zm4",
-          "answer": "Benedikt Livshits",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Declaration of the Word as Such",
-        "year": 1913,
-        "author": "Aleksei Kruchenykh",
-        "key_concepts": "Transrational language, sound poetry, linguistic experimentation",
-        "summary": "Theory of language beyond rational meaning",
-        "significance": "Established framework for experimental poetry",
-        "related_concepts": "Sound poetry, linguistic experimentation, avant-garde"
-      },
-      "questionType": 4
-    },
-    {
-      "question": "Which theorist introduced 'Biomechanics' as performance methodology?",
-      "answers": [
-        {
-          "id": "bm1",
-          "answer": "Vsevolod Meyerhold",
-          "correct": true
-        },
-        {
-          "id": "bm2",
-          "answer": "Konstantin Stanislavski",
-          "correct": false
-        },
-        {
-          "id": "bm3",
-          "answer": "Alexander Tairov",
-          "correct": false
-        },
-        {
-          "id": "bm4",
-          "answer": "Yevgeny Vakhtangov",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Biomechanics",
-        "year": 1922,
-        "author": "Vsevolod Meyerhold",
-        "key_concepts": "Constructivist theater, mechanized movement, industrial rhythm",
-        "summary": "System of actor training based on mechanical principles",
-        "significance": "Established systematic approach to avant-garde performance",
-        "related_concepts": "Constructivism, performance theory, theatrical modernism"
-      },
-      "questionType": 4
-    },
-    {
-      "question": "Which theorist introduced 'Proun' as spatial methodology?",
-      "answers": [
-        {
-          "id": "pr1",
-          "answer": "El Lissitzky",
-          "correct": true
-        },
-        {
-          "id": "pr2",
-          "answer": "Kazimir Malevich",
-          "correct": false
-        },
-        {
-          "id": "pr3",
-          "answer": "Alexander Rodchenko",
-          "correct": false
-        },
-        {
-          "id": "pr4",
-          "answer": "Vladimir Tatlin",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "PROUN",
-        "year": 1921,
-        "author": "El Lissitzky",
-        "key_concepts": "Project for the affirmation of the new, spatial dynamics, architectural form",
-        "summary": "Theory integrating painting, architecture and design",
-        "significance": "Established framework for spatial art practice",
-        "related_concepts": "Constructivism, spatial design, architectural theory"
-      },
-      "questionType": 4
-    },
-    {
-      "question": "Which theorist introduced 'Veshch-Gegenstand-Objet' as methodology?",
-      "answers": [
-        {
-          "id": "vg1",
-          "answer": "El Lissitzky & Ilya Ehrenburg",
-          "correct": true
-        },
-        {
-          "id": "vg2",
-          "answer": "Theo van Doesburg",
-          "correct": false
-        },
-        {
-          "id": "vg3",
-          "answer": "Hans Richter",
-          "correct": false
-        },
-        {
-          "id": "vg4",
-          "answer": "Kurt Schwitters",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Veshch-Gegenstand-Objet",
-        "year": 1922,
-        "author": "El Lissitzky & Ilya Ehrenburg",
-        "key_concepts": "International constructivism, object theory, materialist aesthetics",
-        "summary": "Theory of object-oriented international avant-garde",
-        "significance": "Established framework for international constructivism",
-        "related_concepts": "Constructivism, international avant-garde, object theory"
-      },
-      "questionType": 4
-    },
-    {
-      "question": "Which theorist introduced 'Elementarism' as visual methodology?",
-      "answers": [
-        {
-          "id": "el1",
-          "answer": "Theo van Doesburg",
-          "correct": true
-        },
-        {
-          "id": "el2",
-          "answer": "Piet Mondrian",
-          "correct": false
-        },
-        {
-          "id": "el3",
-          "answer": "Georges Vantongerloo",
-          "correct": false
-        },
-        {
-          "id": "el4",
-          "answer": "Bart van der Leck",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Principles of Neo-Plastic Art",
-        "year": 1925,
-        "author": "Theo van Doesburg",
-        "key_concepts": "Elementary forms, diagonal composition, dynamic equilibrium",
-        "summary": "Theory of elemental visual language beyond De Stijl",
-        "significance": "Established new framework for abstract composition",
-        "related_concepts": "De Stijl, abstract art, geometric composition"
-      },
-      "questionType": 4
-    },
-    {
-      "question": "Which artist pioneered 'Light-Space Modulator' as kinetic methodology?",
-      "answers": [
-        {
-          "id": "lsm1",
-          "answer": "László Moholy-Nagy",
-          "correct": true
-        },
-        {
-          "id": "lsm2",
-          "answer": "Alexander Calder",
-          "correct": false
-        },
-        {
-          "id": "lsm3",
-          "answer": "Naum Gabo",
-          "correct": false
-        },
-        {
-          "id": "lsm4",
-          "answer": "Georges Vantongerloo",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Light-Space Modulator",
-        "year": 1930,
-        "author": "László Moholy-Nagy",
-        "key_concepts": "Light art, kinetic sculpture, technological aesthetics",
-        "summary": "First major light-kinetic sculpture integrating technology",
-        "significance": "Pioneered kinetic light art and technological sculpture",
-        "related_concepts": "Kinetic art, light art, technological sculpture"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Which artist pioneered 'Mobile' as sculptural methodology in 1931?",
-      "answers": [
-        {
-          "id": "mb1",
-          "answer": "Alexander Calder",
-          "correct": true
-        },
-        {
-          "id": "mb2",
-          "answer": "Marcel Duchamp",
-          "correct": false
-        },
-        {
-          "id": "mb3",
-          "answer": "Jean Tinguely",
-          "correct": false
-        },
-        {
-          "id": "mb4",
-          "answer": "Bruno Munari",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Mobile",
-        "year": 1931,
-        "author": "Alexander Calder",
-        "key_concepts": "Kinetic sculpture, balance, movement in art",
-        "summary": "First suspended kinetic sculptures using air currents",
-        "significance": "Established movement as sculptural medium",
-        "related_concepts": "Kinetic art, sculptural movement, balance"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Which artist pioneered 'Spatial Construction' as methodology in 1937?",
-      "answers": [
-        {
-          "id": "sc1",
-          "answer": "Naum Gabo",
-          "correct": true
-        },
-        {
-          "id": "sc2",
-          "answer": "Antoine Pevsner",
-          "correct": false
-        },
-        {
-          "id": "sc3",
-          "answer": "Barbara Hepworth",
-          "correct": false
-        },
-        {
-          "id": "sc4",
-          "answer": "Henry Moore",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Spatial Construction",
-        "year": 1937,
-        "author": "Naum Gabo",
-        "key_concepts": "Constructivist space, kinetic rhythm, transparent structure",
-        "summary": "First systematic use of transparent materials in sculpture",
-        "significance": "Pioneered transparent construction in sculpture",
-        "related_concepts": "Constructivism, spatial art, kinetic sculpture"
-      },
-      "questionType": 7
-    },
-    {
-      "question": "Which artist pioneered 'Rayograph' as photographic methodology in 1935?",
-      "answers": [
-        {
-          "id": "rg1",
-          "answer": "Man Ray",
-          "correct": true
-        },
-        {
-          "id": "rg2",
-          "answer": "László Moholy-Nagy",
-          "correct": false
-        },
-        {
-          "id": "rg3",
-          "answer": "Christian Schad",
-          "correct": false
-        },
-        {
-          "id": "rg4",
-          "answer": "El Lissitzky",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Rayograph",
-        "year": 1935,
-        "author": "Man Ray",
-        "key_concepts": "Camera-less photography, direct exposure, photogram technique",
-        "summary": "Development of direct photographic exposure technique",
-        "significance": "Established new form of abstract photography",
-        "related_concepts": "Photogram, abstract photography, surrealist technique"
-      },
-      "questionType": 7
     }
   ]
 }
