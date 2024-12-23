@@ -1188,496 +1188,6 @@
       "questionType": 6
     },
     {
-      "question": "Who wrote 'The Authoritarian Personality'?",
-      "answers": [
-        {
-          "id": "q34a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q34a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q34a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q34a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Authoritarian Personality",
-        "year": 1950,
-        "author": "Adorno",
-        "key_concepts": "Authoritarianism, personality, society",
-        "summary": "Analysis of authoritarian personality traits",
-        "significance": "Foundational text in psychology",
-        "related_concepts": "Authoritarianism, personality, society"
-      },
-      "questionType": 3
-    },
-    {
-      "question": "Who wrote 'The Culture Industry: Enlightenment as Mass Deception'?",
-      "answers": [
-        {
-          "id": "q35a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q35a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q35a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q35a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Culture Industry: Enlightenment as Mass Deception",
-        "year": 1944,
-        "author": "Adorno",
-        "key_concepts": "Culture industry, enlightenment, mass deception",
-        "summary": "Critique of the culture industry and its role in modern society",
-        "significance": "Foundational text in critical theory",
-        "related_concepts": "Culture industry, enlightenment, mass deception"
-      },
-      "questionType": 6
-    },
-    {
-      "question": "Who wrote 'The Jargon of Authenticity'?",
-      "answers": [
-        {
-          "id": "q36a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q36a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q36a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q36a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Jargon of Authenticity",
-        "year": 1964,
-        "author": "Adorno",
-        "key_concepts": "Authenticity, jargon, society",
-        "summary": "Critique of the concept of authenticity in modern society",
-        "significance": "Foundational text in critical theory",
-        "related_concepts": "Authenticity, jargon, society"
-      },
-      "questionType": 3
-    },
-    {
-      "question": "Who wrote 'The Positivist Dispute in Germany'?",
-      "answers": [
-        {
-          "id": "q37a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q37a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q37a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q37a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Positivist Dispute in Germany",
-        "year": 1969,
-        "author": "Adorno",
-        "key_concepts": "Positivism, dispute, Germany",
-        "summary": "Analysis of the positivist dispute in Germany",
-        "significance": "Foundational text in philosophy of science",
-        "related_concepts": "Positivism, dispute, Germany"
-      },
-      "questionType": 6
-    },
-    {
-      "question": "Who wrote 'The Philosophy of Modern Enlightenment'?",
-      "answers": [
-        {
-          "id": "q38a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q38a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q38a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q38a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of Modern Enlightenment",
-        "year": 1947,
-        "author": "Adorno",
-        "key_concepts": "Enlightenment, philosophy, modernity",
-        "summary": "Analysis of the philosophy of modern enlightenment",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "Enlightenment, philosophy, modernity"
-      },
-      "questionType": 3
-    },
-    {
-      "question": "Who wrote 'The Philosophy of History'?",
-      "answers": [
-        {
-          "id": "q39a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q39a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q39a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q39a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of History",
-        "year": 1947,
-        "author": "Adorno",
-        "key_concepts": "History, philosophy, dialectics",
-        "summary": "Analysis of the philosophy of history",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "History, philosophy, dialectics"
-      },
-      "questionType": 6
-    },
-    {
-      "question": "Who wrote 'The Philosophy of New Music'?",
-      "answers": [
-        {
-          "id": "q40a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q40a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q40a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q40a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of New Music",
-        "year": 1949,
-        "author": "Adorno",
-        "key_concepts": "New music, philosophy, modernity",
-        "summary": "Analysis of the philosophy of new music",
-        "significance": "Foundational text in music theory",
-        "related_concepts": "New music, philosophy, modernity"
-      },
-      "questionType": 3
-    },
-    {
-      "question": "Who wrote 'The Philosophy of the Present'?",
-      "answers": [
-        {
-          "id": "q41a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q41a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q41a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q41a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of the Present",
-        "year": 1958,
-        "author": "Adorno",
-        "key_concepts": "Present, philosophy, modernity",
-        "summary": "Analysis of the philosophy of the present",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "Present, philosophy, modernity"
-      },
-      "questionType": 6
-    },
-    {
-      "question": "Who wrote 'The Philosophy of Technology'?",
-      "answers": [
-        {
-          "id": "q42a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q42a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q42a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q42a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of Technology",
-        "year": 1957,
-        "author": "Adorno",
-        "key_concepts": "Technology, philosophy, modernity",
-        "summary": "Analysis of the philosophy of technology",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "Technology, philosophy, modernity"
-      },
-      "questionType": 3
-    },
-    {
-      "question": "Who wrote 'The Philosophy of the Unactual'?",
-      "answers": [
-        {
-          "id": "q43a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q43a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q43a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q43a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of the Unactual",
-        "year": 1966,
-        "author": "Adorno",
-        "key_concepts": "Unactual, philosophy, modernity",
-        "summary": "Analysis of the philosophy of the unactual",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "Unactual, philosophy, modernity"
-      },
-      "questionType": 6
-    },
-    {
-      "question": "Who wrote 'The Philosophy of the Unconcept'?",
-      "answers": [
-        {
-          "id": "q44a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q44a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q44a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q44a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of the Unconcept",
-        "year": 1966,
-        "author": "Adorno",
-        "key_concepts": "Unconcept, philosophy, modernity",
-        "summary": "Analysis of the philosophy of the unconcept",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "Unconcept, philosophy, modernity"
-      },
-      "questionType": 3
-    },
-    {
-      "question": "Who wrote 'The Philosophy of the Unfinished'?",
-      "answers": [
-        {
-          "id": "q45a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q45a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q45a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q45a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of the Unfinished",
-        "year": 1966,
-        "author": "Adorno",
-        "key_concepts": "Unfinished, philosophy, modernity",
-        "summary": "Analysis of the philosophy of the unfinished",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "Unfinished, philosophy, modernity"
-      },
-      "questionType": 6
-    },
-    {
-      "question": "Who wrote 'The Philosophy of the Unpresent'?",
-      "answers": [
-        {
-          "id": "q46a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q46a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q46a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q46a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "The Philosophy of the Unpresent",
-        "year": 1966,
-        "author": "Adorno",
-        "key_concepts": "Unpresent, philosophy, modernity",
-        "summary": "Analysis of the philosophy of the unpresent",
-        "significance": "Foundational text in philosophy",
-        "related_concepts": "Unpresent, philosophy, modernity"
-      },
-      "questionType": 3
-    },
-    {
-      "question": "Who wrote 'The Philosophy of the Unthought'?",
-      "answers": [
-        {
-          "id": "q47a1",
-          "answer": "Heidegger",
-          "correct": false
-        },
-        {
-          "id": "q47a2",
-          "answer": "Benjamin",
-          "correct": false
-        },
-        {
-          "id": "q47a3",
-          "answer": "Adorno",
-          "correct": true
-        },
-        {
-          "id": "q47a4",
-          "answer": "Marx",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "My Boyfriend Came Back From the War",
-        "year": 1996,
-        "author": "Olia Lialina",
-        "key_concepts": "Net.art, hypertext narrative, web aesthetics",
-        "summary": "Pioneering work of net.art using HTML frames and narrative",
-        "significance": "Established narrative possibilities in net.art",
-        "related_concepts": "Net.art, digital narrative, web-based art"
-      },
-      "questionType": 7
-    },
-    {
       "question": "Who developed the concept of 'cybernetic serendipity'?",
       "answers": [
         {
@@ -3610,111 +3120,6 @@
       "questionType": 2
     },
     {
-      "question": "Who wrote 'Aesthetic Theory'?",
-      "answers": [
-        {
-          "id": "adorno1a",
-          "answer": "Theodor Adorno",
-          "correct": true
-        },
-        {
-          "id": "adorno1b",
-          "answer": "Walter Benjamin",
-          "correct": false
-        },
-        {
-          "id": "adorno1c",
-          "answer": "Max Horkheimer",
-          "correct": false
-        },
-        {
-          "id": "adorno1d",
-          "answer": "Herbert Marcuse",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Aesthetic Theory",
-        "year": 1970,
-        "author": "Theodor Adorno",
-        "key_concepts": "Negative dialectics, autonomous art, culture industry",
-        "summary": "Major work on aesthetics and art's role in society",
-        "significance": "Key text in critical theory of art",
-        "related_concepts": "Modernism, autonomy of art, aesthetic theory"
-      },
-      "questionType": 1
-    },
-    {
-      "question": "Who wrote 'Dialectic of Enlightenment' with Max Horkheimer?",
-      "answers": [
-        {
-          "id": "adorno2a",
-          "answer": "Theodor Adorno",
-          "correct": true
-        },
-        {
-          "id": "adorno2b",
-          "answer": "Herbert Marcuse",
-          "correct": false
-        },
-        {
-          "id": "adorno2c",
-          "answer": "Walter Benjamin",
-          "correct": false
-        },
-        {
-          "id": "adorno2d",
-          "answer": "Ernst Bloch",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Dialectic of Enlightenment",
-        "year": 1944,
-        "author": "Theodor Adorno & Max Horkheimer",
-        "key_concepts": "Culture industry, enlightenment critique, mass deception",
-        "summary": "Critical analysis of rationality and mass culture",
-        "significance": "Foundational text of critical theory",
-        "related_concepts": "Mass culture, enlightenment, cultural criticism"
-      },
-      "questionType": 2
-    },
-    {
-      "question": "Who wrote 'Minima Moralia: Reflections from Damaged Life'?",
-      "answers": [
-        {
-          "id": "adorno3a",
-          "answer": "Theodor Adorno",
-          "correct": true
-        },
-        {
-          "id": "adorno3b",
-          "answer": "Georg Lukács",
-          "correct": false
-        },
-        {
-          "id": "adorno3c",
-          "answer": "Ernst Bloch",
-          "correct": false
-        },
-        {
-          "id": "adorno3d",
-          "answer": "Max Horkheimer",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Minima Moralia",
-        "year": 1951,
-        "author": "Theodor Adorno",
-        "key_concepts": "Damaged life, modern society, critical reflection",
-        "summary": "Collection of aphoristic reflections on modern life and culture",
-        "significance": "Key text in understanding cultural criticism",
-        "related_concepts": "Critical theory, modern life, philosophical reflection"
-      },
-      "questionType": 3
-    },
-    {
       "question": "Who wrote 'The Structural Transformation of the Public Sphere'?",
       "answers": [
         {
@@ -4317,41 +3722,6 @@
         "citation": "standardtesting.io/llm-art"
       },
       "questionType": 7
-    },
-    {
-      "question": "Who wrote 'Minima Moralia: Reflections from Damaged Life'?",
-      "answers": [
-        {
-          "id": "mm1",
-          "answer": "Theodor Adorno",
-          "correct": true
-        },
-        {
-          "id": "mm2",
-          "answer": "Max Horkheimer",
-          "correct": false
-        },
-        {
-          "id": "mm3",
-          "answer": "Walter Benjamin",
-          "correct": false
-        },
-        {
-          "id": "mm4",
-          "answer": "Herbert Marcuse",
-          "correct": false
-        }
-      ],
-      "correctTheory": {
-        "title": "Minima Moralia",
-        "year": 1951,
-        "author": "Theodor Adorno",
-        "key_concepts": "Critical reflection, damaged life, philosophical fragments",
-        "summary": "Collection of reflections on modern life and culture",
-        "significance": "Key text on critical self-reflection and cultural critique",
-        "related_concepts": "Critical theory, reflection, modern life"
-      },
-      "questionType": 1
     },
     {
       "question": "Who wrote 'The Critical Statement as Form'?",
@@ -4984,6 +4354,146 @@
         "related_concepts": "Photogram, abstract photography, surrealist technique"
       },
       "questionType": 7
+    },
+    {
+      "question": "Who wrote 'The Raw and the Cooked'?",
+      "answers": [
+        {
+          "id": "rc1",
+          "answer": "Claude Lévi-Strauss",
+          "correct": true
+        },
+        {
+          "id": "rc2",
+          "answer": "Roland Barthes",
+          "correct": false
+        },
+        {
+          "id": "rc3",
+          "answer": "Georges Bataille",
+          "correct": false
+        },
+        {
+          "id": "rc4",
+          "answer": "Maurice Merleau-Ponty",
+          "correct": false
+        }
+      ],
+      "correctTheory": {
+        "title": "The Raw and the Cooked",
+        "year": 1955,
+        "author": "Claude Lévi-Strauss",
+        "key_concepts": "Structural anthropology, cultural analysis, binary opposition",
+        "summary": "Analysis of cultural myths through structural methodology",
+        "significance": "Established structural analysis in cultural theory",
+        "related_concepts": "Structuralism, mythology, cultural analysis"
+      },
+      "questionType": 1
+    },
+    {
+      "question": "Which year was 'The Open Society and Its Enemies' published?",
+      "answers": [
+        {
+          "id": "os1",
+          "answer": "1945",
+          "correct": true
+        },
+        {
+          "id": "os2",
+          "answer": "1942",
+          "correct": false
+        },
+        {
+          "id": "os3",
+          "answer": "1947",
+          "correct": false
+        },
+        {
+          "id": "os4",
+          "answer": "1949",
+          "correct": false
+        }
+      ],
+      "correctTheory": {
+        "title": "The Open Society and Its Enemies",
+        "year": 1945,
+        "author": "Karl Popper",
+        "key_concepts": "Open society, critical rationalism, historicism",
+        "summary": "Critique of totalitarian thought and historical determinism",
+        "significance": "Major work in political philosophy and social theory",
+        "related_concepts": "Democracy, rationalism, social criticism"
+      },
+      "questionType": 6
+    },
+    {
+      "question": "Who wrote 'Phenomenology of Perception'?",
+      "answers": [
+        {
+          "id": "pp1",
+          "answer": "Maurice Merleau-Ponty",
+          "correct": true
+        },
+        {
+          "id": "pp2",
+          "answer": "Jean-Paul Sartre",
+          "correct": false
+        },
+        {
+          "id": "pp3",
+          "answer": "Simone de Beauvoir",
+          "correct": false
+        },
+        {
+          "id": "pp4",
+          "answer": "Albert Camus",
+          "correct": false
+        }
+      ],
+      "correctTheory": {
+        "title": "Phenomenology of Perception",
+        "year": 1945,
+        "author": "Maurice Merleau-Ponty",
+        "key_concepts": "Embodied perception, lived experience, phenomenology",
+        "summary": "Analysis of perception and embodied experience",
+        "significance": "Key text in phenomenology and perception theory",
+        "related_concepts": "Phenomenology, perception, embodiment"
+      },
+      "questionType": 1
+    },
+    {
+      "question": "Which year was 'Writing Degree Zero' published?",
+      "answers": [
+        {
+          "id": "wz1",
+          "answer": "1953",
+          "correct": true
+        },
+        {
+          "id": "wz2",
+          "answer": "1951",
+          "correct": false
+        },
+        {
+          "id": "wz3",
+          "answer": "1955",
+          "correct": false
+        },
+        {
+          "id": "wz4",
+          "answer": "1957",
+          "correct": false
+        }
+      ],
+      "correctTheory": {
+        "title": "Writing Degree Zero",
+        "year": 1953,
+        "author": "Roland Barthes",
+        "key_concepts": "Literary style, neutral writing, literary theory",
+        "summary": "Analysis of literary style and neutral writing",
+        "significance": "Established framework for analyzing literary style",
+        "related_concepts": "Literary theory, style, structuralism"
+      },
+      "questionType": 6
     }
   ]
 }
