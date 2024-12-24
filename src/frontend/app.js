@@ -1,443 +1,288 @@
-// Quiz state
-let currentQuestion = 0;
-const totalQuestions = 10;
-let playerName = '';
-let scores = {
-    today: [],
-    overall: []
+let allQuestions = [];
+let currentQuestions = [];
+let currentQuestionIndex = 0;
+let score = 0;
+const QUESTIONS_PER_GAME = 10;
+let questionsLoaded = false;
+
+// Add color scheme for different achievement levels
+const achievementColors = {
+    'Robert Fulford': '#FFD700',    // Gold
+    'Reg Bamford': '#C0C0C0',       // Silver
+    'John Solomon': '#CD7F32',      // Bronze
+    'Keith Wylie': '#90EE90',       // Light green
+    'Chris Clarke': '#87CEEB',      // Sky blue
+    'John Prince': '#DDA0DD',       // Plum
+    'Pat Cotter': '#F0E68C',        // Khaki
+    'David Openshaw': '#FFB6C1'     // Light pink
 };
-let allQuestions = [];  // Store all questions
-let questions = [];      // Current quiz questions
 
-// Add to top of file with other state variables
-let lastPlayerName = '';
-let passwordVerified = false;
-
-// Add to state variables at top
-const ADMIN_PASSWORD = 'admin';
-
-// Load questions from JSON file
-fetch('art-questions.json')
+// Fetch questions from JSON file
+fetch('croquet-questions.json')
     .then(response => response.json())
     .then(data => {
-        allQuestions = data.questions;  // Store all questions
-        questions = [...allQuestions];   // Make a copy for current quiz
-        questions = questions.sort(() => Math.random() - 0.5);
-        console.log(`Loaded ${questions.length} questions`);
+        allQuestions = data.questions;
+        questionsLoaded = true;
+        console.log(`Loaded ${allQuestions.length} total questions`);
     })
-    .catch(error => console.error('Error loading questions:', error));
-
-// DOM Elements
-const playerNameInput = document.getElementById('player-name');
-const questionDisplay = document.querySelector('.question-display');
-const answersGrid = document.querySelector('.answers-grid');
-const currentQuestionSpan = document.getElementById('current-question');
-const totalQuestionsSpan = document.getElementById('total-questions');
-const todayScores = document.getElementById('today-scores');
-const overallScores = document.getElementById('overall-scores');
-const timeLeftDisplay = document.getElementById('time-left');
-const pauseButton = document.getElementById('pause-button');
-const skipButton = document.getElementById('skip-button');
-const startScreen = document.getElementById('start-screen');
-const quizScreen = document.getElementById('quiz-screen');
-const startButton = document.getElementById('start-button');
-const passwordInput = document.getElementById('password-input');
-const passwordError = document.getElementById('password-error');
-const CORRECT_PASSWORD = 'banksy';
-
-let timer = null;
-let timeLeft = 10;
-let isPaused = false;
-
-// Add current score tracking
-let currentScore = 0;
-
-// Load saved scores from localStorage
-function loadSavedScores() {
-    const savedScores = localStorage.getItem('artQuizScores');
-    if (savedScores) {
-        scores = JSON.parse(savedScores);
-        
-        // Clear today's scores if they're from a previous day
-        const today = new Date().toDateString();
-        const savedDate = localStorage.getItem('artQuizLastDate');
-        if (savedDate !== today) {
-            scores.today = [];
-            localStorage.setItem('artQuizLastDate', today);
-        }
-    }
-    updateScoreboards();
-}
-
-// Save scores to localStorage
-function saveScores() {
-    localStorage.setItem('artQuizScores', JSON.stringify(scores));
-}
-
-function startTimer() {
-    timeLeft = 10;
-    if (timer) clearInterval(timer);
-    
-    timer = setInterval(() => {
-        if (!isPaused) {
-            timeLeft--;
-            timeLeftDisplay.textContent = timeLeft;
-            
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                handleTimeout();
-            }
-        }
-    }, 1000);
-}
-
-function handleTimeout() {
-    clearInterval(timer);
-    
-    // Show "Time's up!" message
-    const timeupMessage = document.createElement('div');
-    timeupMessage.className = 'timeout-message';
-    timeupMessage.textContent = "Time's up!";
-    answersGrid.appendChild(timeupMessage);
-    
-    // Disable all answer buttons
-    const buttons = answersGrid.querySelectorAll('button');
-    buttons.forEach(button => button.disabled = true);
-    
-    // Show correct answer
-    const correctAnswer = questions[currentQuestion].answers.find(a => a.correct);
-    if (correctAnswer) {
-        const correctButton = Array.from(buttons)
-            .find(button => button.textContent === correctAnswer.answer);
-        if (correctButton) {
-            correctButton.style.color = '#4CAF50';
-            correctButton.style.fontWeight = 'bold';
-        }
-    }
-    
-    // Wait and move to next question
-    setTimeout(() => {
-        currentQuestion++;
-        if (currentQuestion < Math.min(totalQuestions, questions.length)) {
-            showQuestion(currentQuestion);
-        } else {
-            endQuiz();
-        }
-    }, 1500);
-}
-
-function showQuestion(index) {
-    const question = questions[index];
-    if (!question) return;
-
-    // Update question counter in top-right
-    currentQuestionSpan.textContent = `${currentQuestion + 1}/10`;
-
-    questionDisplay.textContent = question.question;
-    answersGrid.innerHTML = '';
-    
-    // Randomize answer positions
-    const shuffledAnswers = [...question.answers]
-        .sort(() => Math.random() - 0.5);
-    
-    shuffledAnswers.forEach((answerObj) => {
-        const button = document.createElement('button');
-        button.textContent = answerObj.answer;
-        button.className = 'answer-button';
-        button.addEventListener('click', () => handleAnswer(answerObj.correct, index, answerObj.answer));
-        answersGrid.appendChild(button);
+    .catch(error => {
+        console.error('Error loading questions:', error);
+        alert('Error loading questions. Please refresh the page.');
     });
 
-    // Update timer display
-    timeLeftDisplay.textContent = timeLeft;
-    startTimer();
-}
-
-function handleAnswer(isCorrect, questionIndex, selectedAnswer) {
-    clearInterval(timer);
-    const question = questions[questionIndex];
-
-    // Show feedback
-    const buttons = answersGrid.querySelectorAll('button');
-    buttons.forEach((button) => {
-        button.disabled = true;
-        const correctAnswer = question.answers.find(a => a.correct).answer;
-        
-        if (isCorrect && button.textContent === selectedAnswer) {
-            // If answer is correct, show green background
-            button.style.backgroundColor = '#4CAF50';
-            button.style.color = 'white';
-            currentScore++;
-        } else if (!isCorrect) {
-            if (button.textContent === selectedAnswer) {
-                // Show wrong answer in red
-                button.style.backgroundColor = '#f44336';
-                button.style.color = 'white';
-            }
-            if (button.textContent === correctAnswer) {
-                // Show correct answer in bold green text
-                button.style.color = '#4CAF50';
-                button.style.fontWeight = 'bold';
-            }
-        }
-    });
-
-    // Wait before showing next question
-    setTimeout(() => {
-        currentQuestion++;
-        
-        if (currentQuestion < Math.min(totalQuestions, questions.length)) {
-            showQuestion(currentQuestion);
-        } else {
-            endQuiz();
-        }
-    }, 1500);
-}
-
-function initQuiz() {
-    // Clear inputs on page load
-    playerNameInput.value = '';
-    passwordInput.value = '';
-    playerName = '';
-    startButton.disabled = true;
-    
-    loadSavedScores();
-
-    function validateInputs() {
-        const nameValid = playerNameInput.value.trim() !== '';
-        const passwordValid = passwordInput.value === CORRECT_PASSWORD;
-        playerName = playerNameInput.value.trim();
-        
-        console.log('Validating inputs:');
-        console.log('Name:', playerName);
-        console.log('Password entered:', passwordInput.value);
-        console.log('Expected password:', CORRECT_PASSWORD);
-        console.log('Password valid:', passwordValid);
-        console.log('Start button disabled:', startButton.disabled);
-        
-        if (passwordInput.value && !passwordValid) {
-            passwordError.textContent = 'Incorrect password';
-            passwordInput.classList.add('error');
-            passwordInput.classList.remove('password-valid');
-        } else if (passwordValid) {
-            passwordError.textContent = '';
-            passwordInput.classList.remove('error');
-            passwordInput.classList.add('password-valid');
-        } else {
-            passwordError.textContent = '';
-            passwordInput.classList.remove('error');
-            passwordInput.classList.remove('password-valid');
-        }
-        
-        startButton.disabled = !(nameValid && passwordValid);
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
+}
 
-    playerNameInput.addEventListener('input', validateInputs);
-    passwordInput.addEventListener('input', validateInputs);
-
-    startButton.onclick = () => {
-        console.log('Start button clicked');
-        console.log('Player name:', playerName);
-        console.log('Password valid:', passwordInput.value === CORRECT_PASSWORD);
-        
-        if (playerName && passwordInput.value === CORRECT_PASSWORD) {
-            console.log('Starting quiz...');
-            startScreen.style.display = 'none';
-            quizScreen.style.display = 'block';
-            startQuiz();
-        } else {
-            console.log('Validation failed:', { playerName, password: passwordInput.value });
-        }
-    };
-
-    updateScoreboards();
-    currentQuestionSpan.textContent = currentQuestion + 1;
-    totalQuestionsSpan.textContent = Math.min(totalQuestions, questions.length);
+function selectRandomQuestions() {
+    if (!questionsLoaded || !allQuestions.length) {
+        console.error('Questions not loaded yet');
+        return [];
+    }
+    let shuffledQuestions = [...allQuestions];
+    shuffleArray(shuffledQuestions);
+    return shuffledQuestions.slice(0, QUESTIONS_PER_GAME);
 }
 
 function startQuiz() {
-    currentQuestion = 0;
-    currentScore = 0;  // Reset score
-    showQuestion(currentQuestion);
+    const nameInput = document.getElementById('nameInput').value;
+
+    if (!nameInput) {
+        alert('Please enter your name');
+        return;
+    }
+
+    if (!questionsLoaded) {
+        alert('Please wait for questions to load');
+        return;
+    }
+
+    // Select random questions for this game
+    currentQuestions = selectRandomQuestions();
+    if (!currentQuestions.length) {
+        alert('Error loading questions. Please refresh the page.');
+        return;
+    }
+
+    currentQuestionIndex = 0;
+    score = 0;
+    
+    // Reset score display
+    document.getElementById('currentScore').textContent = '0';
+    document.getElementById('currentTotal').textContent = '0';
+
+    document.getElementById('startQuiz').style.display = 'none';
+    document.getElementById('quizContent').style.display = 'block';
+    showQuestion();
 }
 
-// Add reset scores functionality
-function resetScores() {
-    const adminPassword = prompt('Enter admin password to reset scores:');
-    if (adminPassword === ADMIN_PASSWORD) {
-        const confirmReset = confirm('Are you sure you want to reset all scores? This cannot be undone.');
-        if (confirmReset) {
-            scores = {
-                today: [],
-                overall: []
-            };
-            saveScores();
-            updateScoreboards();
-            alert('Scores have been reset.');
+function showQuestion() {
+    if (!currentQuestions[currentQuestionIndex]) {
+        console.error('No question available at index:', currentQuestionIndex);
+        return;
+    }
+
+    const questionContainer = document.getElementById('questionContainer');
+    const answerButtons = document.querySelectorAll('.answer-button');
+    const nextButton = document.getElementById('nextButton');
+
+    // Update question counter
+    document.getElementById('currentQuestion').textContent = currentQuestionIndex + 1;
+    document.getElementById('totalQuestions').textContent = QUESTIONS_PER_GAME;
+
+    // Show question
+    const currentQuestion = currentQuestions[currentQuestionIndex];
+    console.log('Current question:', currentQuestion); // Debug log
+    questionContainer.textContent = currentQuestion.question;
+
+    // Reset and populate answer buttons
+    const answers = currentQuestion.answers;
+    console.log('Answers:', answers); // Debug log
+
+    answerButtons.forEach((button, index) => {
+        const answer = answers[index];
+        if (!answer) {
+            console.error('No answer available at index:', index);
+            button.style.display = 'none';
+            return;
         }
+        
+        // Set button text and properties
+        button.textContent = answer.answer;
+        button.style.display = 'flex';
+        button.style.visibility = 'visible';
+        button.style.opacity = '1';
+        button.disabled = false;
+        button.className = 'answer-button';
+        
+        // Add click handler
+        button.onclick = () => selectAnswer(answer.correct);
+        
+        console.log(`Button ${index + 1} text:`, button.textContent); // Debug log
+    });
+
+    nextButton.style.display = 'none';
+}
+
+function selectAnswer(isCorrect) {
+    if (isCorrect) {
+        score++;
+        // Update running score
+        document.getElementById('currentScore').textContent = score;
+    }
+    document.getElementById('currentTotal').textContent = currentQuestionIndex + 1;
+
+    const currentQuestion = currentQuestions[currentQuestionIndex];
+    const buttons = document.querySelectorAll('.answer-button');
+    const correctAnswer = currentQuestion.answers.find(a => a.correct);
+
+    buttons.forEach(button => {
+        button.disabled = true;
+        if (button.innerText === correctAnswer.answer) {
+            button.classList.add('correct');
+            // Show explanation for all questions
+            const explanationDiv = document.createElement('div');
+            explanationDiv.className = 'answer-explanation';
+            
+            // Build explanation text
+            let explanationText = `Source: ${currentQuestion.citation}`;
+            
+            // Add theory explanation if available
+            if (currentQuestion.correctTheory && currentQuestion.correctTheory.summary) {
+                explanationText += `\n\n${currentQuestion.correctTheory.summary}`;
+            }
+            
+            explanationDiv.innerText = explanationText;
+            button.appendChild(explanationDiv);
+        } else if (button.innerText === event.target.innerText && !isCorrect) {
+            button.classList.add('incorrect');
+        }
+    });
+
+    document.getElementById('nextButton').style.display = 'block';
+}
+
+function handleNext() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < QUESTIONS_PER_GAME) {
+        showQuestion();
     } else {
-        alert('Incorrect admin password.');
+        showResults();
     }
 }
 
-// Update scoreboards and endQuiz functions remain the same
-function updateScoreboards() {
-    const sortedToday = [...scores.today].sort((a, b) => b.score - a.score);
-    const sortedOverall = [...scores.overall].sort((a, b) => b.score - a.score);
-
-    console.log('Updating scoreboards:');
-    console.log('Today scores:', sortedToday);
-    console.log('Overall scores:', sortedOverall);
-
-    // Add reset button above scores
-    const resetButton = `
-        <button onclick="resetScores()" 
-                style="margin-bottom: 10px; padding: 5px 10px; 
-                       background: #ff4444; color: white; 
-                       border: none; border-radius: 4px;
-                       cursor: pointer;">
-            Reset Scores
-        </button>
-    `;
-
-    todayScores.innerHTML = 
-        resetButton +
-        sortedToday
-            .slice(0, 10)
-            .map(score => {
-                const rating = getRating(score.score);
-                console.log(`Score ${score.score} gets color ${rating.color} (${rating.title})`);
-                return `<div class="score-entry">
-                    <span>${score.name}</span>
-                    <span style="color: ${rating.color}; font-weight: bold; font-size: 16px; text-shadow: 0 0 1px rgba(0,0,0,0.2);">${score.score}/10</span>
-                </div>`;
-            })
-            .join('');
-
-    overallScores.innerHTML = sortedOverall
-        .slice(0, 10)
-        .map(score => {
-            const rating = getRating(score.score);
-            console.log(`Score ${score.score} gets color ${rating.color} (${rating.title})`);
-            return `<div class="score-entry">
-                <span style="opacity: 0.7; font-size: 12px;">${score.date || 'Classic'}</span>
-                <span>${score.name}</span>
-                <span style="color: ${rating.color}; font-weight: bold; font-size: 16px; text-shadow: 0 0 1px rgba(0,0,0,0.2);">${score.score}/10</span>
-            </div>`;
-        })
-        .join('');
-}
-
-function endQuiz() {
-    clearInterval(timer);
+function showResults() {
+    document.getElementById('quizContent').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
     
-    // Hide timer and controls
-    document.querySelector('.timer-controls').style.display = 'none';
+    const rating = getRating(score);
+    const color = achievementColors[rating];
     
-    // Show end screen
-    questionDisplay.textContent = 'Quiz Complete!';
+    document.getElementById('score').textContent = `${score}/${QUESTIONS_PER_GAME}`;
+    const ratingElement = document.getElementById('rating');
+    ratingElement.textContent = rating;
+    ratingElement.style.color = color;
+    ratingElement.style.fontWeight = 'bold';
+    ratingElement.style.fontSize = '24px';
+    ratingElement.style.textShadow = '1px 1px 2px rgba(0,0,0,0.2)';
     
-    // Get rating based on score
-    const rating = getRating(currentScore);
-    
-    answersGrid.innerHTML = `
-        <div class="end-screen">
-            <p class="final-score" style="color: ${rating.color}; font-weight: bold; font-size: 24px;">
-                Your final score: ${currentScore}/10
-            </p>
-            <p class="rating-title" style="font-weight: bold; font-size: 20px;">
-                You have achieved ${rating.title} status!
-            </p>
-            <button onclick="restartQuiz()" class="play-again">Play Again</button>
-        </div>
-    `;
-    
-    // Update high scores with date
-    const today = new Date().toISOString().split('T')[0];
-    scores.today.push({ name: playerName, score: currentScore });
-    scores.overall.push({ name: playerName, score: currentScore, date: today });
-    
-    // Fix the slice operation for more scores
-    scores.today = scores.today.sort((a, b) => b.score - a.score).slice(0, 10);
-    scores.overall = scores.overall.sort((a, b) => b.score - a.score).slice(0, 10);
-    
-    saveScores();
+    // Save score
+    const name = document.getElementById('nameInput').value;
+    saveScore(name, score);
     updateScoreboards();
 }
 
 function getRating(score) {
-    const ratings = [
-        { score: 0, color: '#0000FF', title: 'John Baldessari' },      // Deep Blue
-        { score: 1, color: '#0040FF', title: 'Yoko Ono' },            // Blue
-        { score: 2, color: '#0080FF', title: 'Hans Haacke' },         // Light Blue
-        { score: 3, color: '#00C0FF', title: 'Adrian Piper' },        // Sky Blue
-        { score: 4, color: '#00FFFF', title: 'Lawrence Weiner' },     // Cyan
-        { score: 5, color: '#FF00FF', title: 'Marina Abramović' },    // Magenta
-        { score: 6, color: '#FF0080', title: 'Jenny Holzer' },        // Pink
-        { score: 7, color: '#FF0040', title: 'Bruce Nauman' },        // Rose
-        { score: 8, color: '#FF0000', title: 'Marcel Broodthaers' },  // Red
-        { score: 9, color: '#C00000', title: 'Marcel Duchamp' },      // Dark Red
-        { score: 10, color: '#800000', title: 'Joseph Beuys' }        // Deep Red
-    ];
-    return ratings[score];
+    const percentage = (score / QUESTIONS_PER_GAME) * 100;
+    if (percentage >= 90) return 'Robert Fulford';      // World Champion level
+    if (percentage >= 80) return 'Reg Bamford';        // Grandmaster level
+    if (percentage >= 70) return 'John Solomon';       // Master level
+    if (percentage >= 60) return 'Keith Wylie';        // Expert level
+    if (percentage >= 50) return 'Chris Clarke';       // Advanced level
+    if (percentage >= 40) return 'John Prince';        // Intermediate level
+    if (percentage >= 30) return 'Pat Cotter';         // Improving level
+    return 'David Openshaw';                           // Beginner level
 }
 
-// Fix pause functionality
-pauseButton.addEventListener('click', () => {
-    isPaused = !isPaused;
-    pauseButton.textContent = isPaused ? '▶️' : '⏸️';
-    
-    // Add visual feedback for paused state
-    if (isPaused) {
-        answersGrid.style.opacity = '0.7';
-        questionDisplay.style.opacity = '0.7';
-    } else {
-        answersGrid.style.opacity = '1';
-        questionDisplay.style.opacity = '1';
-    }
-});
+function saveScore(name, score) {
+    const today = new Date().toISOString().split('T')[0];
+    const rating = getRating(score);
+    const scoreData = {
+        name,
+        score,
+        rating,
+        date: today
+    };
 
-// Add skip functionality
-skipButton.addEventListener('click', () => {
-    clearInterval(timer);
-    currentQuestion++;
-    currentQuestionSpan.textContent = currentQuestion + 1;
-    
-    if (currentQuestion < questions.length) {
-        showQuestion(currentQuestion);
-    } else {
-        endQuiz();
+    // Save to today's scores
+    let todayScores = JSON.parse(localStorage.getItem('croquetQuizScores')) || {};
+    if (!todayScores[today]) {
+        todayScores[today] = [];
     }
-});
+    todayScores[today].push(scoreData);
+    localStorage.setItem('croquetQuizScores', JSON.stringify(todayScores));
 
-// Add new restart function instead of location.reload():
+    // Update all-time high scores
+    let allTimeScores = JSON.parse(localStorage.getItem('croquetQuizAllTimeScores')) || [];
+    allTimeScores.push(scoreData);
+    allTimeScores.sort((a, b) => b.score - a.score);
+    allTimeScores = allTimeScores.slice(0, 10); // Keep only top 10
+    localStorage.setItem('croquetQuizAllTimeScores', JSON.stringify(allTimeScores));
+}
+
+function updateScoreboards() {
+    // Update today's scores
+    const today = new Date().toISOString().split('T')[0];
+    const todayScores = JSON.parse(localStorage.getItem('croquetQuizScores')) || {};
+    const todayScoresList = todayScores[today] || [];
+    
+    const todayScoresHtml = todayScoresList
+        .sort((a, b) => b.score - a.score)
+        .map(score => {
+            const color = achievementColors[score.rating];
+            return `<div style="color: ${color}; font-weight: bold;">
+                ${score.name}: ${score.score}/${QUESTIONS_PER_GAME}
+            </div>`;
+        })
+        .join('');
+    
+    document.getElementById('todayScores').innerHTML = todayScoresHtml || 'No scores yet today';
+
+    // Update all-time scores
+    const allTimeScores = JSON.parse(localStorage.getItem('croquetQuizAllTimeScores')) || [];
+    const allTimeScoresHtml = allTimeScores
+        .map(score => {
+            const color = achievementColors[score.rating];
+            return `<div style="color: ${color}; font-weight: bold;">
+                ${score.name}: ${score.score}/${QUESTIONS_PER_GAME}
+            </div>`;
+        })
+        .join('');
+    
+    document.getElementById('allTimeScores').innerHTML = allTimeScoresHtml || 'No scores yet';
+}
+
+function resetScores() {
+    const today = new Date().toISOString().split('T')[0];
+    let todayScores = JSON.parse(localStorage.getItem('croquetQuizScores')) || {};
+    todayScores[today] = [];
+    localStorage.setItem('croquetQuizScores', JSON.stringify(todayScores));
+    updateScoreboards();
+}
+
 function restartQuiz() {
-    // Get fresh copy of questions and shuffle
-    questions = [...allQuestions].sort(() => Math.random() - 0.5);
-    
-    startScreen.style.display = 'none';
-    quizScreen.style.display = 'block';
-    currentQuestion = 0;
-    currentScore = 0;
-    document.querySelector('.timer-controls').style.display = 'flex';
-    showQuestion(currentQuestion);
+    // Select new random questions for the new game
+    currentQuestions = selectRandomQuestions();
+    currentQuestionIndex = 0;
+    score = 0;
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('startQuiz').style.display = 'block';
+    // Don't clear the name input
+    startQuiz(); // Automatically start the quiz since we have the name
 }
 
-document.addEventListener('DOMContentLoaded', initQuiz); 
-
-// Password validation
-passwordInput.addEventListener('input', () => {
-    console.log('Password input:', passwordInput.value);
-    const password = passwordInput.value;
-    const error = document.getElementById('password-error');
-    
-    if (password === 'banksy') {
-        error.textContent = '';
-        startButton.disabled = false;
-        console.log('Password correct, button enabled');
-    } else {
-        error.textContent = 'Invalid password';
-        startButton.disabled = true;
-        console.log('Password incorrect, button disabled');
-    }
-}); 
+// Initialize scoreboards
+updateScoreboards(); 

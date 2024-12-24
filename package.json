@@ -1,12 +1,12 @@
 {
-  "name": "critical-theory-quiz",
+  "name": "croquet-quiz",
   "version": "1.0.0",
-  "description": "A quiz application for art theory",
+  "description": "An interactive quiz application for testing knowledge of croquet history, rules, and strategy",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "test": "node test-quiz.js && node tests/citation-test.js",
+    "test": "node scripts/test-quiz.js && node tests/citation-test.js",
     "build:reference": "node scripts/build-reference.js",
     "prebuild": "npm run build:reference",
     "validate:refs": "node scripts/validate-references.js",
@@ -14,6 +14,21 @@
     "backup": "node scripts/backup-questions.js",
     "prestart": "npm run backup",
     "merge": "node scripts/merge-backups.js"
+  },
+  "keywords": [
+    "croquet",
+    "quiz",
+    "sports",
+    "education",
+    "history",
+    "rules",
+    "strategy"
+  ],
+  "author": "Michael Kernaghan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelkernaghan/LLM-Croquet-Quiz"
   },
   "dependencies": {
     "express": "^4.18.2"

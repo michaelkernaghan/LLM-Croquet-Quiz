@@ -37,8 +37,7 @@ function createTimelineChart(data, title, maxWidth = 50) {
 }
 
 function analyzeQuestions() {
-    const mainFile = path.join(__dirname, '../src/frontend/art-questions.json');
-    const backupFile = path.join(__dirname, '../src/frontend/art-questions.json.backup');
+    const mainFile = path.join(__dirname, '../src/frontend/croquet-questions.json');
     
     // Check for duplicates
     function findDuplicates(questions) {
@@ -60,69 +59,35 @@ function analyzeQuestions() {
         return duplicates;
     }
     
-    console.log('\nAnalyzing main file:', mainFile);
-    const mainQuestions = JSON.parse(fs.readFileSync(mainFile, 'utf8')).questions;
+    console.log('\nAnalyzing croquet questions file:', mainFile);
+    const questions = JSON.parse(fs.readFileSync(mainFile, 'utf8')).questions;
     
-    console.log('\nAnalyzing backup file:', backupFile);
-    const backupQuestions = JSON.parse(fs.readFileSync(backupFile, 'utf8')).questions;
+    // Check for duplicates
+    const duplicates = findDuplicates(questions);
     
-    // Check for duplicates in each file
-    const mainDuplicates = findDuplicates(mainQuestions);
-    const backupDuplicates = findDuplicates(backupQuestions);
-    
-    console.log('\nDuplicates in main file:', mainDuplicates.length);
-    mainDuplicates.forEach(d => {
+    console.log('\nDuplicates found:', duplicates.length);
+    duplicates.forEach(d => {
         console.log(`Question "${d.question}" appears at indices ${d.firstIndex} and ${d.secondIndex}`);
     });
-    
-    console.log('\nDuplicates in backup file:', backupDuplicates.length);
-    backupDuplicates.forEach(d => {
-        console.log(`Question "${d.question}" appears at indices ${d.firstIndex} and ${d.secondIndex}`);
-    });
-    
-    console.log('\nComparison:');
-    console.log('Main file questions:', mainQuestions.length);
-    console.log('Backup file questions:', backupQuestions.length);
 
-    // Log raw data first
+    // Log raw data
     console.log('\nRaw Data:');
     console.log('File size:', fs.statSync(mainFile).size, 'bytes');
-    console.log('Questions array length:', mainQuestions.length);
-    console.log('JSON structure:', Object.keys(mainQuestions[0]));
-    console.log('First question:', mainQuestions[0].question);
-    console.log('Last question:', mainQuestions[mainQuestions.length - 1].question);
+    console.log('Total questions:', questions.length);
+    console.log('JSON structure:', Object.keys(questions[0]));
+    console.log('First question:', questions[0].question);
+    console.log('Last question:', questions[questions.length - 1].question);
 
-    // Log distribution of question properties
-    const propertyCount = mainQuestions.reduce((acc, q) => {
-        Object.keys(q).forEach(key => {
-            acc[key] = (acc[key] || 0) + 1;
-        });
-        return acc;
-    }, {});
-    console.log('\nProperty distribution:');
-    Object.entries(propertyCount).forEach(([prop, count]) => {
-        console.log(`${prop}: ${count} questions`);
-    });
-
-    // Check for questions without type
-    const noType = mainQuestions.filter(q => !q.questionType).length;
-    console.log('\nQuestions without type:', noType);
-
-    // Show all unique question types
-    const allTypes = new Set(mainQuestions.map(q => q.questionType));
-    console.log('All question types:', Array.from(allTypes).sort());
-
-    // Initialize detailed counters
+    // Initialize counters
     const typeCount = {};
     const categoryCount = {};
     const yearDistribution = {};
-    const authorGenderCount = { male: 0, female: 0, collective: 0 };
     const decadeCount = {};
-    const theoristCount = {};
-    const llmCount = mainQuestions.filter(q => q.isLLMArt).length;
+    const sourceCount = {};
+    const conceptCount = {};
 
     // Count everything
-    mainQuestions.forEach((q, index) => {
+    questions.forEach((q, index) => {
         // Log any malformed questions
         if (!q.question || !q.answers || !q.correctTheory) {
             console.log(`Warning: Malformed question at index ${index}`);
@@ -155,49 +120,72 @@ function analyzeQuestions() {
             decadeCount[decade] = (decadeCount[decade] || 0) + 1;
         }
 
-        // Theorist frequency
-        if (q.correctTheory && q.correctTheory.author) {
-            theoristCount[q.correctTheory.author] = (theoristCount[q.correctTheory.author] || 0) + 1;
+        // Sources/Citations
+        if (q.citation) {
+            sourceCount[q.citation] = (sourceCount[q.citation] || 0) + 1;
+        }
+
+        // Key concepts
+        if (q.correctTheory && q.correctTheory.key_concepts) {
+            q.correctTheory.key_concepts.split(',').forEach(concept => {
+                const trimmedConcept = concept.trim();
+                conceptCount[trimmedConcept] = (conceptCount[trimmedConcept] || 0) + 1;
+            });
         }
     });
 
     // Print analysis
     console.log('\nQuestion Analysis:');
     console.log('=================');
-    console.log(`Total Questions: ${mainQuestions.length}`);
-    console.log(`LLM Art Framework Questions: ${llmCount}`);
+    console.log(`Total Questions: ${questions.length}`);
     
-    createBarChart(typeCount, 'Question Types Distribution');
-
+    // Question Types Distribution
+    const typeNames = {
+        1: "Historical/Biographical",
+        2: "Rules and Regulations",
+        3: "Equipment and Setup",
+        4: "Strategy and Tactics",
+        5: "Tournament and Competition",
+        6: "Techniques and Skills",
+        7: "Famous Matches and Players"
+    };
+    
+    const namedTypeCount = {};
+    Object.entries(typeCount).forEach(([type, count]) => {
+        namedTypeCount[typeNames[type] || `Type ${type}`] = count;
+    });
+    
+    createBarChart(namedTypeCount, 'Question Types Distribution');
     createBarChart(categoryCount, 'Category Distribution');
-
     createTimelineChart(decadeCount, 'Timeline Distribution');
 
+    // Top sources
     createBarChart(
         Object.fromEntries(
-            Object.entries(theoristCount)
+            Object.entries(sourceCount)
                 .sort((a, b) => b[1] - a[1])
                 .slice(0, 10)
         ),
-        'Top 10 Most Referenced Theorists'
+        'Top 10 Most Referenced Sources'
     );
 
-    // Add detailed Adorno analysis
-    console.log('\nAdorno Question Analysis:');
-    const adornoQuestions = mainQuestions.filter(q => 
-        q.correctTheory && q.correctTheory.author === 'Theodor Adorno'
+    // Top concepts
+    createBarChart(
+        Object.fromEntries(
+            Object.entries(conceptCount)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10)
+        ),
+        'Top 10 Key Concepts'
     );
-    console.log(`Total Adorno questions: ${adornoQuestions.length}`);
-    adornoQuestions.forEach((q, i) => {
-        console.log(`${i + 1}. "${q.question}"`);
-    });
 
     // Check for missing required fields
     console.log('\nMissing Required Fields:');
-    mainQuestions.forEach((q, i) => {
+    questions.forEach((q, i) => {
         const missing = [];
         if (!q.category) missing.push('category');
         if (!q.citation) missing.push('citation');
+        if (!q.correctTheory) missing.push('correctTheory');
         if (missing.length > 0) {
             console.log(`Question ${i + 1} missing: ${missing.join(', ')}`);
             console.log(`Question text: "${q.question}"`);
@@ -205,8 +193,8 @@ function analyzeQuestions() {
     });
 
     // Show full category distribution
-    const allCategories = new Set(mainQuestions.map(q => q.category).filter(Boolean));
-    console.log('\nAll Categories:', Array.from(allCategories));
+    const allCategories = new Set(questions.map(q => q.category).filter(Boolean));
+    console.log('\nAll Categories:', Array.from(allCategories).sort());
 }
 
 analyzeQuestions(); 

@@ -9,19 +9,19 @@ function backupQuestions() {
     }
 
     // Read current questions
-    const questionsPath = path.join(__dirname, '../src/frontend/art-questions.json');
+    const questionsPath = path.join(__dirname, '../src/frontend/croquet-questions.json');
     const questions = JSON.parse(fs.readFileSync(questionsPath, 'utf8'));
 
     // Create timestamp
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     
     // Create backup with timestamp
-    const backupPath = path.join(backupDir, `art-questions-${timestamp}.json`);
+    const backupPath = path.join(backupDir, `croquet-questions-${timestamp}.json`);
     fs.writeFileSync(backupPath, JSON.stringify(questions, null, 2));
 
     // Keep only last 10 backups
     const files = fs.readdirSync(backupDir)
-        .filter(f => f.startsWith('art-questions-'))
+        .filter(f => f.startsWith('croquet-questions-'))
         .sort()
         .reverse();
 

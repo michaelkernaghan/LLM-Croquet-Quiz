@@ -1,130 +1,74 @@
-# Critical Theory Quiz
+# Croquet Quiz
 
-A quiz application testing knowledge of art theory, critical theory, and digital aesthetics.
+An interactive quiz application testing knowledge of croquet history, rules, and strategy. Built with modern web technologies and powered by AI.
 
 ## Features
 
-- Interactive quiz with timed questions
-- Password-protected access
-- High score tracking (daily and all-time)
-- Historical reference guide
-- LLM Art Framework integration
-- Pause and skip functionality
-- Responsive design
+- Multiple choice questions covering various aspects of croquet:
+  - Game History
+  - Equipment & Rules
+  - Famous Players
+  - Tournament Play
+  - Techniques & Strategy
+  - Variations & Forms
+- Real-time scoring system
+- Daily and all-time high score tracking
+- Timed questions with pause functionality
+- Responsive design for all devices
+- Detailed explanations for correct answers
 
-## Technical Details
+## Getting Started
 
-### Built With
-- Node.js
-- Express
-- Puppeteer (for testing)
-- Claude 3.5 Sonnet (for content generation and assistance)
+### Prerequisites
 
-### Project Structure
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-```
-critical-theory-quiz/
-src/
-  server.js
-  frontend/
-    app.js
-    styles.css
-    art-questions.json
-    StartScreen.js
-scripts/
-  build-reference.js
-  validate-references.js
-tests/
-  citation-test.js
-public/
-  critical-theory-reference.html
-test-screenshots/
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/michaelkernaghan/LLM-Croquet-Quiz.git
+cd LLM-Croquet-Quiz
 ```
 
-### Key Components
-
-#### Quiz Engine
-- Randomized question selection
-- Answer validation
-- Score tracking
-- Timer functionality
-- Pause/Skip controls
-
-#### Reference Guide
-- Historical data of theorists
-- Active periods
-- Major works
-- Interactive filtering
-- Search functionality
-
-#### Authentication
-- Password protection
-- Input validation
-- Session management
-
-### Testing
-
-#### Automated Tests
-
-npm run test           # Run all tests
-npm run test:citations # Test citations and UI
-npm run validate:refs  # Validate references
-
-Our test suite includes:
-- Citation verification
-- UI interaction testing
-- Reference data validation
-- Screenshot capture
-- Random theorist name generation
-
-### Development
-
-# Install dependencies
+2. Install dependencies:
+```bash
 npm install
+```
 
-# Start development server
-npm run dev
+3. Start the development server:
+```bash
+npm start
+```
 
-# Build reference page
-npm run build:reference
+4. Open your browser and navigate to `http://localhost:3000`
 
-# Run tests
-npm test
+## Quiz Structure
 
-## Content Attribution
-
-- Questions curated from historical sources and LLM Art Framework
-- Built with assistance from Claude 3.5 Sonnet (anthropic-ai/claude-3-sonnet@20240229)
-- Reference data validated against academic sources
-
-## Features in Detail
-
-### Quiz Interface
-- Dynamic question loading
-- Visual feedback for answers
-- Progress tracking
-- Timer with pause function
-- Skip option for difficult questions
-
-### Reference Guide
-- Searchable theorist database
-- Period filtering
-- Work chronology
-- Category organization
-- Interactive filtering
-
-### High Scores
-- Daily leaderboard
-- All-time records
-- Score persistence
-- Reset functionality
+Each question includes:
+- Question text
+- Four multiple choice answers
+- Detailed explanation of the correct answer
+- Historical context and significance
+- Related concepts and references
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch
-3. Run tests: `npm test`
-4. Submit pull request
+We welcome contributions to improve the quiz content and functionality. Please feel free to:
+- Add new questions
+- Improve existing questions
+- Fix errors or inaccuracies
+- Enhance the user interface
+- Add new features
+
+## Data Sources
+
+Question content is sourced from:
+- World Croquet Federation official documentation
+- Historical croquet records and publications
+- Tournament archives
+- Expert player interviews and writings
 
 ## License
 
@@ -132,6 +76,20 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Claude 3.5 Sonnet for development assistance
-- LLM Art Framework for conceptual questions
-- Art theory community for validation
+- World Croquet Federation for supporting croquet education
+- The global croquet community for maintaining the sport's rich history
+- All contributors who have helped improve this educational resource
+
+## Contact
+
+For questions, suggestions, or contributions, please:
+1. Open an issue on GitHub
+2. Submit a pull request
+3. Contact the maintainers directly
+
+## Version History
+
+- v1.0.0 (March 2024) - Initial release
+  - Basic quiz functionality
+  - Core question set
+  - Score tracking
