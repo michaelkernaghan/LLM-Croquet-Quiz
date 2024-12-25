@@ -1,0 +1,712 @@
+{
+    "questions": [
+        {
+            "question": "What are the standard dimensions of a full-size croquet court?",
+            "answers": [
+                {
+                    "id": "q1a1",
+                    "answer": "35 yards by 28 yards",
+                    "correct": true
+                },
+                {
+                    "id": "q1a2",
+                    "answer": "30 yards by 25 yards",
+                    "correct": false
+                },
+                {
+                    "id": "q1a3",
+                    "answer": "40 yards by 30 yards",
+                    "correct": false
+                },
+                {
+                    "id": "q1a4",
+                    "answer": "35 yards by 35 yards",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Standard Court Dimensions",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Court dimensions, standardization, playing surface",
+                "summary": "The standard court size is exactly 35 yards by 28 yards, with the longer sides running north-south. This precise measurement is fundamental to proper hoop placement and gameplay."
+            },
+            "questionType": 3,
+            "citation": "Laws of Association Croquet, 7th Edition, Law 2: The Court",
+            "category": "Equipment and Setup"
+        },
+        {
+            "question": "Who is credited with standardizing the rules of croquet in the 1860s?",
+            "answers": [
+                {
+                    "id": "q2a1",
+                    "answer": "Walter Jones Whitmore",
+                    "correct": true
+                },
+                {
+                    "id": "q2a2",
+                    "answer": "John Jaques II",
+                    "correct": false
+                },
+                {
+                    "id": "q2a3",
+                    "answer": "Lord Tollemache",
+                    "correct": false
+                },
+                {
+                    "id": "q2a4",
+                    "answer": "Charles Dickens",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "First Standardized Rules of Croquet",
+                "year": 1866,
+                "author": "Walter Jones Whitmore",
+                "key_concepts": "Rule standardization, competitive play, game formalization",
+                "summary": "Whitmore published 'Croquet: The Laws and Regulations of the Game,' which became the foundation for modern croquet rules.",
+                "significance": "First comprehensive rulebook that standardized competitive play",
+                "related_concepts": "Tournament regulations, game variations, competitive formats"
+            },
+            "questionType": 1,
+            "citation": "Whitmore, W.J. (1866). Croquet: The Laws and Regulations of the Game",
+            "category": "History"
+        },
+        {
+            "question": "What is a 'triple peel' in Association Croquet?",
+            "answers": [
+                {
+                    "id": "q3a1",
+                    "answer": "Running three consecutive hoops with the striker's ball",
+                    "correct": false
+                },
+                {
+                    "id": "q3a2",
+                    "answer": "Causing another ball to score its last three hoops and be pegged out during a single turn while the striker's ball remains in play",
+                    "correct": true
+                },
+                {
+                    "id": "q3a3",
+                    "answer": "Making three roquet shots in succession",
+                    "correct": false
+                },
+                {
+                    "id": "q3a4",
+                    "answer": "Running the last three hoops with any ball",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Advanced Break Play Techniques",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Peeling, advanced tactics, break control",
+                "summary": "A triple peel is an advanced tactic where the striker causes another ball (the peelee) to score its last three hoops and be pegged out in a single turn, while keeping their own ball in play for tactical advantage."
+            },
+            "questionType": 4,
+            "citation": "Laws of Association Croquet, 7th Edition, Glossary: Triple Peel",
+            "category": "Advanced Techniques"
+        },
+        {
+            "question": "In Association Croquet, what happens when a ball is roqueted?",
+            "answers": [
+                {
+                    "id": "q4a1",
+                    "answer": "The turn ends immediately",
+                    "correct": false
+                },
+                {
+                    "id": "q4a2",
+                    "answer": "The striker's ball becomes dead on the roqueted ball",
+                    "correct": true
+                },
+                {
+                    "id": "q4a3",
+                    "answer": "The roqueted ball is removed from play",
+                    "correct": false
+                },
+                {
+                    "id": "q4a4",
+                    "answer": "The striker gets an extra turn",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Roquet and Croquet Strokes",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Roquet, croquet stroke, continuation stroke",
+                "summary": "After a roquet, the striker's ball becomes dead on the roqueted ball and must take croquet before continuing play.",
+                "significance": "Fundamental rule that enables tactical play and break building",
+                "related_concepts": "Dead ball status, croquet stroke, continuation stroke"
+            },
+            "questionType": 2,
+            "citation": "Laws of Association Croquet, 7th Edition, Law 16",
+            "category": "Rules and Regulations"
+        },
+        {
+            "question": "In break play, what is the key principle for positioning pioneer balls?",
+            "answers": [
+                {
+                    "id": "q5a1",
+                    "answer": "Always place them directly in front of hoops",
+                    "correct": false
+                },
+                {
+                    "id": "q5a2",
+                    "answer": "Position them to create a rush after running the hoop",
+                    "correct": true
+                },
+                {
+                    "id": "q5a3",
+                    "answer": "Place them as close to boundaries as possible",
+                    "correct": false
+                },
+                {
+                    "id": "q5a4",
+                    "answer": "Keep them near the center of the court",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Break Play Fundamentals",
+                "year": 2009,
+                "author": "John Riches and Wayne Davies",
+                "key_concepts": "Break play, pioneer positioning, rush setup",
+                "summary": "Pioneer balls should be positioned to set up a rush after running each hoop, enabling controlled continuation of the break."
+            },
+            "questionType": 4,
+            "citation": "Croquet Secrets: The Collected Writings of John Riches (2009), Chapter: Break Play, Section: Pioneer Ball Positioning",
+            "category": "Strategy and Tactics"
+        },
+        {
+            "question": "What scoring system is used in the MacRobertson Shield?",
+            "answers": [
+                {
+                    "id": "q6a1",
+                    "answer": "Best of 5 games",
+                    "correct": false
+                },
+                {
+                    "id": "q6a2",
+                    "answer": "Best of 3 games",
+                    "correct": false
+                },
+                {
+                    "id": "q6a3",
+                    "answer": "Test match format",
+                    "correct": true
+                },
+                {
+                    "id": "q6a4",
+                    "answer": "Single game knockout",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "International Tournament Formats",
+                "year": 1925,
+                "author": "Croquet Association",
+                "key_concepts": "Tournament formats, international competition, test matches",
+                "summary": "The MacRobertson Shield uses a test match format, where teams compete over multiple days in a series of matches.",
+                "significance": "Most prestigious team event in world croquet",
+                "related_concepts": "Team competition, international croquet, tournament structure"
+            },
+            "questionType": 5,
+            "citation": "World Croquet Federation Tournament Regulations",
+            "category": "Tournament and Competition"
+        },
+        {
+            "question": "Who won the first MacRobertson Shield in 1925?",
+            "answers": [
+                {
+                    "id": "q7a1",
+                    "answer": "England",
+                    "correct": false
+                },
+                {
+                    "id": "q7a2",
+                    "answer": "New Zealand",
+                    "correct": false
+                },
+                {
+                    "id": "q7a3",
+                    "answer": "Australia",
+                    "correct": true
+                },
+                {
+                    "id": "q7a4",
+                    "answer": "United States",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "MacRobertson Shield History",
+                "year": 1925,
+                "author": "Croquet Association",
+                "key_concepts": "International competition, team events, tournament history",
+                "summary": "The first MacRobertson Shield was won by Australia in 1925, establishing the tournament as the premier international team event in croquet.",
+                "significance": "Marked the beginning of international team competition in croquet",
+                "related_concepts": "International croquet, team competition, tournament history"
+            },
+            "questionType": 7,
+            "citation": "MacRobertson Shield Official Records, Croquet Association Archives",
+            "category": "Famous Matches and Players"
+        },
+        {
+            "question": "What is the correct distance between hoops 1 and 2 on a standard court?",
+            "answers": [
+                {
+                    "id": "q8a1",
+                    "answer": "21 yards",
+                    "correct": true
+                },
+                {
+                    "id": "q8a2",
+                    "answer": "18 yards",
+                    "correct": false
+                },
+                {
+                    "id": "q8a3",
+                    "answer": "24 yards",
+                    "correct": false
+                },
+                {
+                    "id": "q8a4",
+                    "answer": "15 yards",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Court Setting and Measurements",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Court layout, hoop settings, measurements",
+                "summary": "The standard distance between hoops 1 and 2 is set at 21 yards, as specified in the official WCF court layout diagram. This spacing is crucial for proper game play and standard court setup."
+            },
+            "questionType": 2,
+            "citation": "Laws of Association Croquet, 7th Edition, Appendix 1: Court Layout Diagram",
+            "category": "Rules and Regulations"
+        },
+        {
+            "question": "Under current rules, what happens if a ball hits the peg when it is not pegged out?",
+            "answers": [
+                {
+                    "id": "q9a1",
+                    "answer": "The ball is removed from play",
+                    "correct": false
+                },
+                {
+                    "id": "q9a2",
+                    "answer": "The turn ends immediately",
+                    "correct": true
+                },
+                {
+                    "id": "q9a3",
+                    "answer": "The ball is replaced",
+                    "correct": false
+                },
+                {
+                    "id": "q9a4",
+                    "answer": "Play continues normally",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Peg Hits and Turn Endings",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Peg hits, turn endings, ball status",
+                "summary": "When a ball that is not ready to be pegged out hits the peg, the turn ends immediately. This prevents accidental pegging out and maintains tactical play."
+            },
+            "questionType": 2,
+            "citation": "Laws of Association Croquet, 7th Edition, Law 38",
+            "category": "Rules and Regulations"
+        },
+        {
+            "question": "What is the standard time limit for tournament games?",
+            "answers": [
+                {
+                    "id": "q10a1",
+                    "answer": "3 hours",
+                    "correct": true
+                },
+                {
+                    "id": "q10a2",
+                    "answer": "2 hours",
+                    "correct": false
+                },
+                {
+                    "id": "q10a3",
+                    "answer": "4 hours",
+                    "correct": false
+                },
+                {
+                    "id": "q10a4",
+                    "answer": "No time limit",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Tournament Time Limits",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Time limits, tournament play, game management",
+                "summary": "Standard tournament games are typically set at 3 hours, with specific rules for handling endings when time is called."
+            },
+            "questionType": 5,
+            "citation": "World Croquet Federation Tournament Regulations 2023",
+            "category": "Tournament and Competition"
+        },
+        {
+            "question": "What are the official specifications for croquet balls under WCF tournament regulations?",
+            "answers": [
+                {
+                    "id": "q11a1",
+                    "answer": "3⅝ inches in diameter, 16 ounces in weight",
+                    "correct": true
+                },
+                {
+                    "id": "q11a2",
+                    "answer": "3½ inches in diameter, 14 ounces in weight",
+                    "correct": false
+                },
+                {
+                    "id": "q11a3",
+                    "answer": "3¾ inches in diameter, 18 ounces in weight",
+                    "correct": false
+                },
+                {
+                    "id": "q11a4",
+                    "answer": "3⅝ inches in diameter, 18 ounces in weight",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Ball Specifications",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Equipment standards, ball specifications, tournament regulations",
+                "summary": "Official tournament balls must meet precise specifications to ensure consistent play across all competitions."
+            },
+            "questionType": 3,
+            "citation": "World Croquet Federation Equipment Regulations 2023",
+            "category": "Equipment and Setup"
+        },
+        {
+            "question": "What is the correct sequence of play at the start of a game under Law 8.1?",
+            "answers": [
+                {
+                    "id": "q12a1",
+                    "answer": "Blue, Red, Black, Yellow, playing from either baulk-line within the first four turns",
+                    "correct": true
+                },
+                {
+                    "id": "q12a2",
+                    "answer": "Any order chosen by the players",
+                    "correct": false
+                },
+                {
+                    "id": "q12a3",
+                    "answer": "Blue, Black, Red, Yellow from corner 4",
+                    "correct": false
+                },
+                {
+                    "id": "q12a4",
+                    "answer": "Red, Yellow, Blue, Black from corner 1",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Opening Sequence",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Opening sequence, turn order, baulk-line rules",
+                "summary": "The game starts with a specific sequence of balls and players have the option to play from either baulk-line in the first four turns."
+            },
+            "questionType": 2,
+            "citation": "Laws of Association Croquet, 7th Edition, Law 8.1",
+            "category": "Rules and Regulations"
+        },
+        {
+            "question": "What is the primary purpose of wiring in a leave position?",
+            "answers": [
+                {
+                    "id": "q13a1",
+                    "answer": "To prevent opponent's balls from having direct shots at your balls",
+                    "correct": true
+                },
+                {
+                    "id": "q13a2",
+                    "answer": "To make the game more visually appealing",
+                    "correct": false
+                },
+                {
+                    "id": "q13a3",
+                    "answer": "To practice advanced shots",
+                    "correct": false
+                },
+                {
+                    "id": "q13a4",
+                    "answer": "To confuse the opponent",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Tactical Leaves and Wiring",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Wiring, tactical play, leave positions",
+                "summary": "Wiring is a crucial defensive strategy in leaves where balls are positioned so that hoops or other balls prevent the opponent from having direct shots at your balls."
+            },
+            "questionType": 4,
+            "citation": "MacRobertson Shield 2022 - Leave Strategies",
+            "category": "Strategy and Tactics"
+        },
+        {
+            "question": "What is a pioneer in break management?",
+            "answers": [
+                {
+                    "id": "q14a1",
+                    "answer": "A ball placed ahead for future hoop running",
+                    "correct": true
+                },
+                {
+                    "id": "q14a2",
+                    "answer": "The first player to run a hoop",
+                    "correct": false
+                },
+                {
+                    "id": "q14a3",
+                    "answer": "A special type of mallet",
+                    "correct": false
+                },
+                {
+                    "id": "q14a4",
+                    "answer": "The player who starts the game",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Break Management Fundamentals",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Pioneer placement, break construction, tactical play",
+                "summary": "Pioneers are balls strategically placed ahead of play to facilitate running future hoops. Proper pioneer management includes considering distance from hoops, angle requirements, and backup options."
+            },
+            "questionType": 4,
+            "citation": "MacRobertson Shield 2022 - Break Management",
+            "category": "Strategy and Tactics"
+        },
+        {
+            "question": "What should be considered when managing opponent's balls in a leave?",
+            "answers": [
+                {
+                    "id": "q15a1",
+                    "answer": "Separation requirements, wiring effectiveness, and break prevention",
+                    "correct": true
+                },
+                {
+                    "id": "q15a2",
+                    "answer": "Making them look neat and tidy",
+                    "correct": false
+                },
+                {
+                    "id": "q15a3",
+                    "answer": "Placing them all in one corner",
+                    "correct": false
+                },
+                {
+                    "id": "q15a4",
+                    "answer": "Moving them as far as possible",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Leave Position Management",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Leave positions, tactical play, opponent management",
+                "summary": "Managing opponent's balls in a leave requires careful consideration of separation requirements, effective wiring, and preventing potential break opportunities."
+            },
+            "questionType": 4,
+            "citation": "MacRobertson Shield 2022 - Leave Strategies",
+            "category": "Strategy and Tactics"
+        },
+        {
+            "question": "What is a key consideration when managing a three-ball break?",
+            "answers": [
+                {
+                    "id": "q16a1",
+                    "answer": "Alternative break paths and recovery options",
+                    "correct": true
+                },
+                {
+                    "id": "q16a2",
+                    "answer": "Always using standard break patterns",
+                    "correct": false
+                },
+                {
+                    "id": "q16a3",
+                    "answer": "Focusing only on the next hoop",
+                    "correct": false
+                },
+                {
+                    "id": "q16a4",
+                    "answer": "Ignoring opponent's balls",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Three-Ball Break Management",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Break adaptation, tactical play, limited ball management",
+                "summary": "Three-ball break adaptations require careful consideration of alternative break paths and recovery options, as standard break patterns may not be possible."
+            },
+            "questionType": 4,
+            "citation": "MacRobertson Shield 2022 - Break Management",
+            "category": "Strategy and Tactics"
+        },
+        {
+            "question": "How should weather conditions affect leave strategy?",
+            "answers": [
+                {
+                    "id": "q17a1",
+                    "answer": "Adjust ball positioning and risk assessment based on wind and surface conditions",
+                    "correct": true
+                },
+                {
+                    "id": "q17a2",
+                    "answer": "Always use the same leave regardless of conditions",
+                    "correct": false
+                },
+                {
+                    "id": "q17a3",
+                    "answer": "Cancel play in poor weather",
+                    "correct": false
+                },
+                {
+                    "id": "q17a4",
+                    "answer": "Only consider wind direction",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Weather Impact on Strategy",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Weather adaptation, tactical adjustment, risk management",
+                "summary": "Weather conditions significantly impact leave strategy, requiring adjustments to ball positioning and modified risk assessment."
+            },
+            "questionType": 4,
+            "citation": "MacRobertson Shield 2022 - Leave Strategies",
+            "category": "Strategy and Tactics"
+        },
+        {
+            "question": "What is a key principle of defensive leaves?",
+            "answers": [
+                {
+                    "id": "q18a1",
+                    "answer": "Utilizing corners and boundaries while creating effective wiring",
+                    "correct": true
+                },
+                {
+                    "id": "q18a2",
+                    "answer": "Placing all balls in the center",
+                    "correct": false
+                },
+                {
+                    "id": "q18a3",
+                    "answer": "Keeping balls close together",
+                    "correct": false
+                },
+                {
+                    "id": "q18a4",
+                    "answer": "Ignoring opponent's ball positions",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Defensive Leave Strategy",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Defensive play, tactical positioning, wiring",
+                "summary": "Defensive leaves focus on utilizing corners and boundaries while creating effective wiring to minimize opponent's options."
+            },
+            "questionType": 4,
+            "citation": "MacRobertson Shield 2022 - Leave Strategies",
+            "category": "Strategy and Tactics"
+        },
+        {
+            "question": "When should a player consider switching from an aggressive to a defensive strategy in test match play?",
+            "answers": [
+                {
+                    "id": "q19a1",
+                    "answer": "When leading with limited time remaining",
+                    "correct": true
+                },
+                {
+                    "id": "q19a2",
+                    "answer": "Only in the first game",
+                    "correct": false
+                },
+                {
+                    "id": "q19a3",
+                    "answer": "When trailing significantly",
+                    "correct": false
+                },
+                {
+                    "id": "q19a4",
+                    "answer": "Never during a test match",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Test Match Strategy",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Match management, tactical adaptation, time management",
+                "summary": "In test match play, leading players should consider adopting a more defensive strategy when time is limited to protect their advantage."
+            },
+            "questionType": 5,
+            "citation": "MacRobertson Shield 2022 - Match Context",
+            "category": "Tournament and Competition"
+        },
+        {
+            "question": "What is a key consideration when attempting to recover a break after losing a pioneer position?",
+            "answers": [
+                {
+                    "id": "q20a1",
+                    "answer": "Creating new pioneer positions while maintaining control",
+                    "correct": true
+                },
+                {
+                    "id": "q20a2",
+                    "answer": "Immediately ending the turn",
+                    "correct": false
+                },
+                {
+                    "id": "q20a3",
+                    "answer": "Taking the longest available shot",
+                    "correct": false
+                },
+                {
+                    "id": "q20a4",
+                    "answer": "Rushing to the next hoop",
+                    "correct": false
+                }
+            ],
+            "correctTheory": {
+                "title": "Break Recovery",
+                "year": 2023,
+                "author": "World Croquet Federation",
+                "key_concepts": "Break recovery, tactical adaptation, control maintenance",
+                "summary": "When recovering from a lost pioneer position, the key is to create new pioneer positions while maintaining control of the break."
+            },
+            "questionType": 4,
+            "citation": "MacRobertson Shield 2022 - Break Management",
+            "category": "Strategy and Tactics"
+        }
+    ]
+} 

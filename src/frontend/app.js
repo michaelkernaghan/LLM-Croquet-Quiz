@@ -179,15 +179,21 @@ function showResults() {
     document.getElementById('results').style.display = 'block';
     
     const rating = getRating(score);
-    const color = achievementColors[rating];
     
-    document.getElementById('score').textContent = `${score}/${QUESTIONS_PER_GAME}`;
-    const ratingElement = document.getElementById('rating');
-    ratingElement.textContent = rating;
-    ratingElement.style.color = color;
-    ratingElement.style.fontWeight = 'bold';
-    ratingElement.style.fontSize = '24px';
-    ratingElement.style.textShadow = '1px 1px 2px rgba(0,0,0,0.2)';
+    // Create results HTML
+    const resultsHTML = `
+        <h2>Quiz Complete!</h2>
+        <div class="score-display">
+            <span>Your final score: </span>
+            <span class="score-number">${score}/${QUESTIONS_PER_GAME}</span>
+        </div>
+        <div class="achievement-status">
+            You have achieved ${rating} status!
+        </div>
+        <button onclick="restartQuiz()" class="play-again-button">Play Again</button>
+    `;
+    
+    document.getElementById('results').innerHTML = resultsHTML;
     
     // Save score
     const name = document.getElementById('nameInput').value;
